@@ -5,7 +5,7 @@ import { NumeredQuestion, Question } from './providers/QuestionProvider';
 import { Quiz } from './quiz/Quiz';
 
 
-const quiz = new Quiz(40);
+const quiz = new Quiz(3);
       quiz.init();
 
 
@@ -82,7 +82,7 @@ function App() {
 
 const ResultsScreen: React.FC<{ restart:()=>void }> = ({ restart })=> {
 
-    const percent = Math.round(quiz.correctas / quiz.limit)*100;
+    const percent = Math.round( quiz.correctas / quiz.limit * 100);
 
     return <div style={{margin:"100px 0"}}>
         
@@ -90,9 +90,9 @@ const ResultsScreen: React.FC<{ restart:()=>void }> = ({ restart })=> {
         
         <div style={{display:"flex", justifyContent:"center", flexDirection:"row"}}>
             <Stat label="Correctas">{quiz.correctas}</Stat>
-            <Stat label="Incorrectas">{quiz.incorrectas}</Stat>
-            <Stat label="Puntaje">{percent}%</Stat>
-        </div>
+            <Stat label="Fallas">{quiz.incorrectas}</Stat>
+            <Stat label="Puntaje de acierto">{percent}%</Stat>
+        </div> 
 
         <div className='next-question'>
         <a href="#" onClick={restart}>↻ Reiniciar</a>
