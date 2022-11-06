@@ -24,7 +24,7 @@ export class Quiz {
         this._sinResponder = [];
     }
 
-    private totalQuestions() {
+    totalAvailableQuestions() {
         return this.providers.reduce( (tot, prov)=>tot+prov.totalQuestions() ,0)
     }
 

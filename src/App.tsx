@@ -55,10 +55,13 @@ function App() {
 
             { question && 
                 <div className='question'>
-                    <div className='pager'><strong>{question.number}</strong> / {quiz.limit} </div>
+                    <div className='pager'>
+                        <strong>{question.number}</strong> / {quiz.limit} 
+                        <div style={{fontSize:"0.3em"}}><strong>{quiz.limit}</strong> preguntas aleatorias de <strong>{quiz.totalAvailableQuestions() }</strong> disponibles.</div>
+                    </div>
 
                     { question.image && <img src={question.image} style={{display:"block", margin:"0 auto", marginBottom:20, maxHeight:300, border:"2px solid #ccc"}}/> }
-                    { question.text }
+                    <strong>{ question.text }</strong>
                 </div>
             }
 
@@ -68,7 +71,10 @@ function App() {
                 <a href="#" onClick={next}>Siguiente →</a>
             </div> }
 
-            <div style={{marginTop:"50px", color:"#666", fontSize:"0.8em"}}>Algún error? <a href="https://github.com/bandinopla/simulador-test-de-conducir/issues" target="_blank">Posteá un issue / Avisanos</a></div>
+            <div style={{marginTop:"50px", color:"#666", fontSize:"0.8em"}}>
+                Algún error? <a href="https://github.com/bandinopla/simulador-test-de-conducir/issues" target="_blank">Posteá un issue / Avisanos</a>
+                 &nbsp;|&nbsp;Lee el <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf" target="_blank">Manual Teórico</a>
+                </div>
         </div>
     );
 }
