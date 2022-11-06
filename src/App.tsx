@@ -5,7 +5,7 @@ import { NumeredQuestion, Question } from './providers/QuestionProvider';
 import { Quiz } from './quiz/Quiz';
 
 
-const quiz = new Quiz(3);
+const quiz = new Quiz(40);
       quiz.init();
 
 
