@@ -1,6 +1,7 @@
 import { NumeredQuestion, Question } from "../providers/QuestionProvider";
 import { Source1Provider } from "../providers/Source1.provider";
 import { Source2Provider } from "../providers/Source2.provider";
+import { Source3Provider } from "../providers/Source3.provider";
 
 
 
@@ -8,7 +9,8 @@ export class Quiz {
 
     private providers = [
         new Source1Provider(),
-        new Source2Provider()
+        new Source2Provider(),
+        new Source3Provider()
     ]
 
     private _limit:number;
