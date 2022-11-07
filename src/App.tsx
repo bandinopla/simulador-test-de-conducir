@@ -1,5 +1,5 @@
 
-import { PropsWithChildren, useState } from 'react';
+import { PropsWithChildren, useEffect, useRef, useState } from 'react';
 import './App.css';
 import { NumeredQuestion, Question } from './providers/QuestionProvider';
 import { Quiz } from './quiz/Quiz';
@@ -60,12 +60,13 @@ function App() {
                         <div style={{fontSize:"0.3em"}}><strong>{quiz.limit}</strong> preguntas aleatorias de <strong>{quiz.totalAvailableQuestions() }</strong> disponibles.</div>
                     </div>
 
-                    { question.image && <img src={question.image} style={{display:"block", margin:"0 auto", marginBottom:20, maxHeight:300, border:"2px solid #ccc"}}/> }
+                    { question.image && <Image src={question.image}/> }
+
                     <strong>{ question.text }</strong>
                 </div>
             }
 
-            { question?.options.map((option,i)=><div className={`option ${ answer>-1? question.correctIndex==i?"isCorrect": answer==i?"isIncorrect": ""  :""}`} onClick={()=>setMyAnswer(i)}>{option}</div>) }
+            { question?.options.map((option,i)=><div key={i} className={`option ${ answer>-1? question.correctIndex==i?"isCorrect": answer==i?"isIncorrect": ""  :""}`} onClick={()=>setMyAnswer(i)}>{option}</div>) }
 
             { answer>-1 && <div className='next-question'>
                 <a href="#" onClick={next}>Siguiente →</a>
@@ -106,6 +107,34 @@ const Stat : React.FC<PropsWithChildren<{ label:string }>> = ({ label, children 
                 <div>{label}</div>
                 <div style={{fontSize:"3em"}}>{children}</div>
             </div>
+}
+
+const Image : React.FC<{src:string}> = ({ src }) => {
+
+    const ref = useRef<HTMLImageElement>(null);
+    const [loadedSrc, setLoadedSrc] = useState("");
+
+    useEffect(()=>{
+
+        if( ref.current )
+        {
+            const emiter = ref.current;
+
+            emiter.onload = ()=>{
+                setLoadedSrc(src);
+            } 
+
+            return ()=> { emiter.onload = null };
+        }
+
+        
+
+    },[src]);
+ 
+    return <> 
+        { loadedSrc!=src? <div style={{height:300, display:"flex", alignItems:"center", justifyContent:"center" }}>Cargando imagen...</div> : ""}
+        <a href={src} target="_blank"><img src={src} ref={ref} loading="eager" style={{ display: loadedSrc==src? "block" : "none", margin:"0 auto", marginBottom:20, height:300, border:"2px solid #ccc"}}/></a>
+    </>;
 }
 
 
