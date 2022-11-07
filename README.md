@@ -16,6 +16,7 @@ Existen muchos simuladores de examen teórico online, se unificaron datos extra�
 - [examendeconducir.com.ar ... categoriaB-caba](https://examendeconducir.com.ar/simulador-examen-de-manejo-preguntas-categoriaB-caba)
 - [tramitesonline.top/solo-tipo-B](https://tramitesonline.top/solo-tipo-B/)
 - [test-conducir.yurkap.com/test-de-conducir](https://test-conducir.yurkap.com/test-de-conducir/respuestas-correctas)
+- [driverschool.com.ar - Categoria B Autos y Camionetas hasta 3.500kg: Test 1 a 5](https://www.driverschool.com.ar/manuales/iesvi/)
 
 _[!] si sabés de otra fuente, avisá!_
 

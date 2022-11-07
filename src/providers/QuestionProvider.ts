@@ -5,6 +5,11 @@ export type Question = {
     correctIndex:number
 }
 
+export type SourceLink = {
+    name:string,
+    link:string
+}
+
 export type NumeredQuestion = {
     number:number
 } & Question;
@@ -12,4 +17,5 @@ export type NumeredQuestion = {
 export interface IQuestionProvider {
     totalQuestions:()=>number;
     getQuestion: ( index:number ) => Question;
+    get source():SourceLink;
 }

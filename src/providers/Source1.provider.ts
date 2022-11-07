@@ -1,9 +1,16 @@
-import { IQuestionProvider, Question } from "./QuestionProvider";
+import { IQuestionProvider, Question, SourceLink } from "./QuestionProvider";
 
 import data from "../data/source1";
 
 export class Source1Provider implements IQuestionProvider
 {
+    get source(): SourceLink {
+        return {
+            name:"testdeconducir.com.ar",
+            link:"https://www.testdeconducir.com.ar/categoria/b"
+        }
+    }
+
     totalQuestions() {
         return data.length;
     }

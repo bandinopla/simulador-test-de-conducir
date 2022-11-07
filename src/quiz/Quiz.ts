@@ -1,8 +1,9 @@
-import { NumeredQuestion, Question } from "../providers/QuestionProvider";
+import { NumeredQuestion, Question, SourceLink } from "../providers/QuestionProvider";
 import { Source1Provider } from "../providers/Source1.provider";
 import { Source2Provider } from "../providers/Source2.provider";
 import { Source3Provider } from "../providers/Source3.provider";
 import { Source4Provider } from "../providers/Source4.provider";
+import { Source5Provider } from "../providers/Source5.provider";
 
 
 
@@ -13,6 +14,7 @@ export class Quiz {
         new Source2Provider(),
         new Source3Provider(),
         new Source4Provider(),
+        new Source5Provider()
     ]
 
     private _limit:number;
@@ -88,5 +90,9 @@ export class Quiz {
 
     public get incorrectas() {
         return this._incorrectas;
+    }
+
+    public get sourceLinks() : SourceLink[] {
+        return this.providers.map(p=>p.source)
     }
 }

@@ -1,9 +1,16 @@
-import { IQuestionProvider, Question } from "./QuestionProvider";
+import { IQuestionProvider, Question, SourceLink } from "./QuestionProvider";
 
 import {quizJSON as data} from "../data/source2";
 
 export class Source2Provider implements IQuestionProvider
 {
+    get source(): SourceLink {
+        return {
+            name:"examendeconducir.com.ar",
+            link:"https://examendeconducir.com.ar/simulador-examen-de-manejo-preguntas-categoriaB-caba"
+        }
+    }
+
     totalQuestions() {
         return data.questions.length;
     }
