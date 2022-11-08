@@ -20,32 +20,47 @@ export class Quiz {
     private _limit:number;
     private _sinResponder: NumeredQuestion[];
     private _incorrectas: number;
+    private _correctPercentToPass: number;
+    private _totalAvailableQuestions: number;
 
-    constructor( limit:number=40 )
+    constructor( )
     {
-        this._limit = limit;
+        this._limit = 0;
         this._incorrectas = 0;
         this._sinResponder = [];
+        this._correctPercentToPass = 0;
+        this._totalAvailableQuestions = 0;
     }
 
     totalAvailableQuestions() {
-        return this.providers.reduce( (tot, prov)=>tot+prov.totalQuestions() ,0)
+        return this._totalAvailableQuestions; //this.providers.reduce( (tot, prov)=>tot+prov.totalQuestions() ,0)
     }
 
     public get limit(){ return this._limit };
 
-    init() {
 
+    restart() {
+        this._limit = 0; 
+        this._sinResponder = []; 
+    }
+
+    init( limit:number, providersON:boolean[], seApruebaCon:number ) {
+
+        this._limit = limit;
         this._incorrectas = 0;
+        this._correctPercentToPass = seApruebaCon;
 
         //flatmapear el array...
-        const all: Question[] = this.providers.reduce( (rtrn, prov)=>{
+        const all: Question[] = this.providers.reduce( (rtrn, prov, provIndex)=>{
 
-            for (let i = 0; i < prov.totalQuestions(); i++) {
+            if( providersON[provIndex] )
+            {
+                for (let i = 0; i < prov.totalQuestions(); i++) {
 
-                /** @ts-ignore */
-                rtrn.push( prov.getQuestion(i) );
-            }
+                    /** @ts-ignore */
+                    rtrn.push( prov.getQuestion(i) );
+                }
+            } 
 
             return rtrn;
         } ,[]);
@@ -56,8 +71,13 @@ export class Quiz {
             [all[i], all[j]] = [all[j], all[i]];
         } 
 
+        this._totalAvailableQuestions = all.length;
+
         // limitar preguntas a este numero
-        all.length = this._limit;
+        all.length = Math.min( this._limit, all.length );
+
+        //en caso de que haya cambiado...
+        this._limit = all.length;
 
         this._sinResponder = all.map( (q,i)=>({
             ...q,
@@ -94,5 +114,16 @@ export class Quiz {
 
     public get sourceLinks() : SourceLink[] {
         return this.providers.map(p=>p.source)
+    }
+
+    public percent() {
+        return Math.round(this.correctas / this.limit * 100);
+    }
+    public aprobo() {
+        return this.percent()>=this._correctPercentToPass;
+    }
+
+    public termino() {
+        return this._limit>0 && this._sinResponder.length==0;
     }
 }
