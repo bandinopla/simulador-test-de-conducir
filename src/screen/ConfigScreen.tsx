@@ -27,7 +27,7 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: () => void }> = ({ quiz
 
     const percent = useRef<HTMLInputElement>(null);
     const total = useRef<HTMLInputElement>(null);
-    const [use, setUse] = useState<boolean[]>(savedUseState() ?? new Array(quiz.sourceLinks.length).fill(true));
+    const [use, setUse] = useState<boolean[]>(savedUseState() || new Array(quiz.sourceLinks.length).fill(true));
 
 
     useLayoutEffect(() => {
