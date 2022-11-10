@@ -23,6 +23,6 @@ export const Image: React.FC<{ src: string }> = ({ src }) => {
 
     return <>
         {loadedSrc != src ? <div style={{ height: 300, display: "flex", alignItems: "center", justifyContent: "center" }}>Cargando imagen...</div> : ""}
-        <a href={src} target="_blank"><img src={src} ref={ref} loading="eager" style={{ display: loadedSrc == src ? "block" : "none", margin: "0 auto", marginBottom: 20, height: 300, border: "2px solid #ccc" }} /></a>
+        <a href={src} target="_blank"><img src={src} ref={ref} loading="eager" style={{ display: loadedSrc == src ? "block" : "none", margin: "0 auto", marginBottom: 20, maxHeight: 300, maxWidth:800, border: "2px solid #ccc" }} /></a>
     </>;
 }
