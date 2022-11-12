@@ -1,6 +1,7 @@
 <img src="https://gcba.github.io/Obelisco/header/header-logo.svg" alt="Logo Gobierno Buenos Aires" height="100"/>
 <br/>
 <sub>*No oficial. El logo es solo para ilustrar que está enfocado en CABA.</sub>
+ 
 
 # Simulador de Test Teórico de conducción
 
@@ -38,4 +39,17 @@ La fuente de los datos pude contener errores, siempre usar el manual oficial com
 En caso de querer colaborar, clonar el repo y hacer pull request. Se dará crédito a todo quién colabore. 
 
 Si notás algún error o tenés nuevas preguntas para agregar [creá un issue acá](https://github.com/bandinopla/simulador-test-de-conducir/issues).
+
+----
+
+## Contribuciones ✨
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
