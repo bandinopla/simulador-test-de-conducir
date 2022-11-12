@@ -23,11 +23,31 @@ const savedUseState = () => {
 }
 
 
-export const ConfigScreen: React.FC<{ quiz: Quiz, start: () => void }> = ({ quiz, start }) => {
+/**
+ * a pedido de https://www.reddit.com/user/Jauretche/
+ * https://www.reddit.com/r/argentina/comments/yt42lg/comment/iw2uiws/?context=3 
+ */
+const savedAutoAdvance = ()=> {
+
+    var saved = false;
+
+    try {
+        saved = JSON.parse(localStorage.getItem('autoadvance') ?? "false"); 
+    }
+    catch (e) {
+        // nothing...
+    }
+
+    return saved;
+}
+
+
+export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void }> = ({ quiz, start }) => {
 
     const percent = useRef<HTMLInputElement>(null);
     const total = useRef<HTMLInputElement>(null);
     const [use, setUse] = useState<boolean[]>(savedUseState() || new Array(quiz.sourceLinks.length).fill(true));
+    const [auto, setAuto] = useState<boolean>(savedAutoAdvance())
 
 
     useLayoutEffect(() => {
@@ -38,7 +58,7 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: () => void }> = ({ quiz
         return () => {
 
             localStorage.setItem('percent2pass', parseInt(percent.current!.value).toString() || DEFAULT_PERCENT.toString());
-            localStorage.setItem('total', parseInt(total.current!.value).toString() || DEFAULT_TOTAL.toString());
+            localStorage.setItem('total', parseInt(total.current!.value).toString() || DEFAULT_TOTAL.toString()); 
         }
 
     }, []);
@@ -53,6 +73,11 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: () => void }> = ({ quiz
         setUse([...use]);
     }
 
+    const onSetAuto : (val:boolean)=>void = val => {
+        localStorage.setItem('autoadvance', JSON.stringify(val) );
+        setAuto(val)
+    }
+
     const iniciar = () => {
 
         const limit = parseInt(total.current!.value) || DEFAULT_TOTAL;
@@ -64,7 +89,7 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: () => void }> = ({ quiz
         }
 
         quiz.init(limit, use, sePasaCon);
-        start();
+        start(auto);
     }
 
 
@@ -76,7 +101,10 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: () => void }> = ({ quiz
             <Switch on={use[i]} setTo={value => setUseProvider(i, value)} /> Fuente <strong>#{i + 1}</strong>: <a href={source.link} target="_blank">{source.name}</a>
         </div>)}
 
-        <h3>Se aprueba con <input ref={percent} size={3} style={{ color: "blue", textAlign: "center", fontWeight: "bold", fontSize: 25 }} type="text" placeholder="total" /> % correctas.</h3>
+        <h3 style={{border:"2px solid #666", display:"inline-block", padding:10}}>Se aprueba con <input ref={percent} size={3} style={{ color: "blue", textAlign: "center", fontWeight: "bold", fontSize: 25 }} type="text" placeholder="total" /> % correctas.</h3>
+
+        <h4>
+            <Switch on={auto} setTo={ nvalue=>onSetAuto(nvalue) }/> Avanzar automaticamente al responder.</h4>
 
         <div className='next-question'>
             <a href="#" onClick={iniciar}><strong>Iniciar ⇒ </strong></a>

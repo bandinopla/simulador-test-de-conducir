@@ -15,6 +15,8 @@ const quiz = new Quiz();
 function App() {
 
     const [question, setQuestion] = useState<NumeredQuestion | undefined>();
+    const [autoMode, setAutoMode] = useState<boolean>(false);
+    const timer = useRef<NodeJS.Timeout>();
 
     /**
      * Para esta app, como solo nos importa en el momento de contestar si está bien o mal, no hace falta recordar el pasado. Con esto alcanza y sobra...
@@ -27,16 +29,24 @@ function App() {
             quiz.answer(optionIndex);
             setAnswer(optionIndex);
         }
+
+        if( autoMode )
+        {
+            clearInterval( timer.current ); 
+            timer.current = setTimeout( next, 500 );
+        }
     }
 
     const next = () => {
 
+        clearInterval( timer.current ); 
         setAnswer(-1);
         setQuestion(quiz.getQuestion())
     }
 
     const restart = () => {
 
+        clearInterval( timer.current ); 
         quiz.restart();
         setQuestion(undefined);
         setAnswer(-3);
@@ -48,7 +58,7 @@ function App() {
         <div className="App">
             <Header />
 
-            {!question && !quiz.termino() && <ConfigScreen quiz={quiz} start={() => setQuestion(quiz.getQuestion())} />}
+            {!question && !quiz.termino() && <ConfigScreen quiz={quiz} start={(auto) => { setAutoMode(auto) ; setQuestion(quiz.getQuestion()) }} />}
 
             {!question && quiz.termino() && <ResultsScreen quiz={quiz} restart={restart} />}
 
