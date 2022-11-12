@@ -117,3 +117,18 @@ header {
     padding-left: 5px;
     margin-left: 5px;
 }
+
+.switch {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  width: 50px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.switch:hover {
+  filter: brightness(.9);
+}
