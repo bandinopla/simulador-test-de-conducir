@@ -54,6 +54,11 @@ header {
     max-width: 80%;
 }
 
+.main-content {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .option {
     font-size: 1.1em;
     margin: 5px auto;
@@ -72,6 +77,27 @@ header {
 .option.isIncorrect {
     background-color: crimson;
     color:white;
+}
+
+.questions-number-input {
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.question-sources-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: max-content;
+  margin: auto;
+}
+
+.question-config-percentage {
+  border:2px solid #666;
+  display: inline-block;
+  padding: 10px;
 }
 
 .next-question {
@@ -96,4 +122,19 @@ header {
     border-left: 1px solid #ccc;
     padding-left: 5px;
     margin-left: 5px;
+}
+
+.switch {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  width: 50px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.switch:hover {
+  filter: brightness(.9);
 }
