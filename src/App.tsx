@@ -26,14 +26,14 @@ function App() {
     const setMyAnswer = (optionIndex: number) => {
 
         if (answer < 0) {
-            quiz.answer(optionIndex);
-            setAnswer(optionIndex);
-        }
+            const correct = quiz.answer(optionIndex);
+            setAnswer(optionIndex); 
 
-        if( autoMode )
-        {
-            clearInterval( timer.current ); 
-            timer.current = setTimeout( next, 500 );
+            if( autoMode && correct )
+            {
+                clearInterval( timer.current ); 
+                timer.current = setTimeout( next, 500 );
+            }
         }
     }
 

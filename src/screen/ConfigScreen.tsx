@@ -107,7 +107,7 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void 
         <h3 className="question-config-percentage">Se aprueba con <input className="questions-number-input" ref={percent} size={3} type="text" placeholder="total" /> % correctas.</h3>
 
         <h4>
-            <Switch on={auto} setTo={ nvalue=>onSetAuto(nvalue) }/> Avanzar automaticamente al responder.</h4>
+            <Switch on={auto} setTo={ nvalue=>onSetAuto(nvalue) }/> Avanzar automaticamente si respondí bien.</h4>
 
         <div className='next-question'>
             <a href="#" onClick={iniciar}><strong>Iniciar ⇒ </strong></a>
