@@ -101,6 +101,7 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void 
             {quiz.sourceLinks.map((source, i) => <div key={i} style={{ padding: 10 }}>
                 <Switch on={use[i]} setTo={value => setUseProvider(i, value)} /> Fuente <strong>#{i + 1}</strong>: <a href={source.link} target="_blank">{source.name}</a>
             </div>)}
+
         </div>
 
         <h3 className="question-config-percentage">Se aprueba con <input className="questions-number-input" ref={percent} size={3} type="text" placeholder="total" /> % correctas.</h3>
