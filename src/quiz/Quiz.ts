@@ -76,12 +76,15 @@ export class Quiz {
         } 
 
         this._totalAvailableQuestions = all.length;
-
-        // limitar preguntas a este numero
-        all.length = Math.min( this._limit, all.length );
-
+ 
         //en caso de que haya cambiado...
-        this._limit = all.length;
+        if( limit>0 )
+        {
+            // limitar preguntas a este numero
+            all.length = Math.min( this._limit, all.length ); 
+        } 
+
+        this._limit = all.length; 
 
         this._sinResponder = all.map( (q,i)=>({
             ...q,
@@ -91,6 +94,10 @@ export class Quiz {
 
     getQuestion() {
         return this._sinResponder[0];
+    }
+
+    getRawQuestion( index:number ) {
+        return this._sinResponder[index];
     }
 
     answer( index:number ) {

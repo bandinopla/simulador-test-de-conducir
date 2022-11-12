@@ -1,6 +1,20 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 export const Image: React.FC<{ src: string }> = ({ src }) => {
+
+    const imageSrc = useMemo(() =>{
+        
+        if( src.indexOf("http") > -1 )
+        {
+            return process.env.PUBLIC_URL+"/"+src.substring(0, src.lastIndexOf("/")).replace(/\W+/g,"-")+"/"+src.split("/").pop();
+        }
+        else 
+        {
+            return src;
+        } 
+    
+    }, [src]);
+
 
     const ref = useRef<HTMLImageElement>(null);
     const [loadedSrc, setLoadedSrc] = useState("");
@@ -23,6 +37,6 @@ export const Image: React.FC<{ src: string }> = ({ src }) => {
 
     return <>
         {loadedSrc != src ? <div style={{ height: 300, display: "flex", alignItems: "center", justifyContent: "center" }}>Cargando imagen...</div> : ""}
-        <a href={src} target="_blank"><img src={src} ref={ref} loading="eager" style={{ display: loadedSrc == src ? "block" : "none", margin: "0 auto", marginBottom: 20, minHeight: 300, maxWidth:800, border: "2px solid #ccc" }} /></a>
+        <a href={imageSrc} target="_blank"><img src={imageSrc} ref={ref} loading="eager" style={{ display: loadedSrc == src ? "block" : "none", margin: "0 auto", marginBottom: 20, minHeight: 300, maxWidth: 800, border: "2px solid #ccc" }} /></a>
     </>;
 }
