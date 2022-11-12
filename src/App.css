@@ -1,3 +1,9 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    color: #202124;
+    padding: 0;
+}
 .App {
   text-align: center;
 }
@@ -38,7 +44,7 @@
 }
 
 header {
-    border-bottom:2px solid #555;
+    border-bottom:2px solid #007BC7;
 }
 
 .question {
