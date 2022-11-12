@@ -73,12 +73,25 @@ header {
     color:white;
 }
 
+.questions-number-input {
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .question-sources-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: max-content;
   margin: auto;
+}
+
+.question-config-percentage {
+  border:2px solid #666;
+  display: inline-block;
+  padding: 10px;
 }
 
 .next-question {
