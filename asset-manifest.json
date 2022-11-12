@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/simulador-test-de-conducir/static/css/main.79a07988.css",
-    "main.js": "/simulador-test-de-conducir/static/js/main.034ee179.js",
+    "main.js": "/simulador-test-de-conducir/static/js/main.2b016d01.js",
     "static/js/787.9bc2c823.chunk.js": "/simulador-test-de-conducir/static/js/787.9bc2c823.chunk.js",
     "index.html": "/simulador-test-de-conducir/index.html",
     "main.79a07988.css.map": "/simulador-test-de-conducir/static/css/main.79a07988.css.map",
-    "main.034ee179.js.map": "/simulador-test-de-conducir/static/js/main.034ee179.js.map",
+    "main.2b016d01.js.map": "/simulador-test-de-conducir/static/js/main.2b016d01.js.map",
     "787.9bc2c823.chunk.js.map": "/simulador-test-de-conducir/static/js/787.9bc2c823.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79a07988.css",
-    "static/js/main.034ee179.js"
+    "static/js/main.2b016d01.js"
   ]
 }
