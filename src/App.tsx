@@ -57,42 +57,44 @@ function App() {
     return (
         <div className="App">
             <Header />
+            <main className="main-content">
+                {!question && !quiz.termino() && <ConfigScreen quiz={quiz} start={(auto) => { setAutoMode(auto) ; setQuestion(quiz.getQuestion()) }} />}
 
-            {!question && !quiz.termino() && <ConfigScreen quiz={quiz} start={(auto) => { setAutoMode(auto) ; setQuestion(quiz.getQuestion()) }} />}
+                {!question && quiz.termino() && <ResultsScreen quiz={quiz} restart={restart} />}
 
-            {!question && quiz.termino() && <ResultsScreen quiz={quiz} restart={restart} />}
+                {question &&
+                    <div className='question'>
+                        <div className='pager'>
+                            <strong>{question.number}</strong> / {quiz.limit}
+                            <div style={{ fontSize: "0.3em" }}><strong>{quiz.limit}</strong> preguntas aleatorias de <strong>{quiz.totalAvailableQuestions()}</strong> barajadas.</div>
+                        </div>
 
-            {question &&
-                <div className='question'>
-                    <div className='pager'>
-                        <strong>{question.number}</strong> / {quiz.limit}
-                        <div style={{ fontSize: "0.3em" }}><strong>{quiz.limit}</strong> preguntas aleatorias de <strong>{quiz.totalAvailableQuestions()}</strong> barajadas.</div>
+                        {question.image && <Image src={question.image} />}
+
+                        <strong>{question.text}</strong>
                     </div>
+                }
 
-                    {question.image && <Image src={question.image} />}
+                {question?.options.map((option, i) => <div key={i} className={`option ${answer > -1 ? question.correctIndex == i ? "isCorrect" : answer == i ? "isIncorrect" : "" : ""}`} onClick={() => setMyAnswer(i)}>{option}</div>)}
 
-                    <strong>{question.text}</strong>
+                {answer > -1 && <div className='next-question'>
+                    <a href="#" onClick={next}><strong>Siguiente →</strong></a>
+                </div>}
+
+                {question && <div className='next-question' style={{ fontSize: "1em" }}>
+                    <a href="#" onClick={restart}>↻ Reiniciar</a>
+                </div>}
+
+                <div style={{ marginTop: "50px", color: "#666", fontSize: "0.8em" }}>
+                    Algún error? <a href="https://github.com/bandinopla/simulador-test-de-conducir/issues" target="_blank">Posteá un issue / Avisanos</a>
+                    &nbsp;|&nbsp;Lee el <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf" target="_blank">Manual Teórico</a>
                 </div>
-            }
 
-            {question?.options.map((option, i) => <div key={i} className={`option ${answer > -1 ? question.correctIndex == i ? "isCorrect" : answer == i ? "isIncorrect" : "" : ""}`} onClick={() => setMyAnswer(i)}>{option}</div>)}
+                <div style={{ color: "#666", fontSize: "0.8em" }}>
+                    Fuente de los datos: {quiz.sourceLinks.map((source, i) => <a key={i} href={source.link} target="_blank" className="sourceLink">{source.name}</a>)}
+                </div>
+            </main>
 
-            {answer > -1 && <div className='next-question'>
-                <a href="#" onClick={next}><strong>Siguiente →</strong></a>
-            </div>}
-
-            {question && <div className='next-question' style={{ fontSize: "1em" }}>
-                <a href="#" onClick={restart}>↻ Reiniciar</a>
-            </div>}
-
-            <div style={{ marginTop: "50px", color: "#666", fontSize: "0.8em" }}>
-                Algún error? <a href="https://github.com/bandinopla/simulador-test-de-conducir/issues" target="_blank">Posteá un issue / Avisanos</a>
-                &nbsp;|&nbsp;Lee el <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf" target="_blank">Manual Teórico</a>
-            </div>
-
-            <div style={{ color: "#666", fontSize: "0.8em" }}>
-                Fuente de los datos: {quiz.sourceLinks.map((source, i) => <a key={i} href={source.link} target="_blank" className="sourceLink">{source.name}</a>)}
-            </div>
 
         </div>
     );

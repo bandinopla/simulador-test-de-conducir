@@ -97,9 +97,11 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void 
         <h1>Configurá tu examen↴</h1>
         <h3>Evaluar <input ref={total} size={3} style={{ color: "blue", textAlign: "center", fontWeight: "bold", fontSize: 25 }} type="text" placeholder="total" /> preguntas aleatorias de las siguientes fuentes:</h3>
 
-        {quiz.sourceLinks.map((source, i) => <div key={i} style={{ padding: 10 }}>
-            <Switch on={use[i]} setTo={value => setUseProvider(i, value)} /> Fuente <strong>#{i + 1}</strong>: <a href={source.link} target="_blank">{source.name}</a>
-        </div>)}
+        <div className="question-sources-container">
+            {quiz.sourceLinks.map((source, i) => <div key={i} style={{ padding: 10 }}>
+                <Switch on={use[i]} setTo={value => setUseProvider(i, value)} /> Fuente <strong>#{i + 1}</strong>: <a href={source.link} target="_blank">{source.name}</a>
+            </div>)}
+        </div>
 
         <h3 style={{border:"2px solid #666", display:"inline-block", padding:10}}>Se aprueba con <input ref={percent} size={3} style={{ color: "blue", textAlign: "center", fontWeight: "bold", fontSize: 25 }} type="text" placeholder="total" /> % correctas.</h3>
 
