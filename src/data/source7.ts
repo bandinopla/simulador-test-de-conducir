@@ -289,4 +289,4 @@ export const source:Question[] = [
     },
 
 ]
-.map(q=>({ ...q, image:process.env.PUBLIC_URL+q.image}));
+.map(q=>({ ...q, image:q.image? process.env.PUBLIC_URL+q.image : undefined}));

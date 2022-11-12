@@ -562,10 +562,210 @@ export const source:Question[] = [
             "El vehículo gris",
             "El vehículo rojo"
         ],
+        correctIndex: 0,
+        image:"/source6/prioridad2.jpg"
+    },
+
+    {
+        text:"Se permite la modificación de la potencia o el tipo de luces del auto una vez adquirido?",
+        options: [
+            "Sí",
+            "No"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Al estar próximos a una detención para estacionar el vehículo, qué luces debemos encender para indicar esta intención?",
+        options: [
+            "Las luces altas",
+            "Las luces de posisionamiento",
+            "Las luces bajas",
+            "Las balizas"
+        ],
+        correctIndex: 3
+    },
+
+    {
+        image:"/source6/car-lights.jpg",
+        text:"Dónde están ubicadas las luces bajas?",
+        options: "12345".split("").map(n=>`En (${n})`),
+        correctIndex: 2
+    },
+
+    {
+        image:"/source6/car-lights.jpg",
+        text:"Dónde están ubicadas las luces rompe niebla?",
+        options: "12345".split("").map(n=>`En (${n})`),
+        correctIndex: 4
+    },
+
+    {
+        image:"/source6/car-lights.jpg",
+        text:"Dónde están ubicadas las luces de giro/balizas?",
+        options: "12345".split("").map(n=>`En (${n})`),
+        correctIndex: 3
+    },
+
+    {
+        image:"/source6/car-lights2.jpg",
+        text:"Dónde están ubicadas las luces de giro/balizas?",
+        options: "12345".split("").map(n=>`En (${n})`),
         correctIndex: 0
+    },
+
+    {
+        image:"/source6/car-lights2.jpg",
+        text:"Dónde están ubicadas las luces de retroceso",
+        options: "12345".split("").map(n=>`En (${n})`),
+        correctIndex: 1
+    },
+
+    {
+        image:"/source6/car-lights2.jpg",
+        text:"Dónde están ubicadas las luces de freno principales",
+        options: "12345".split("").map(n=>`En (${n})`),
+        correctIndex: 4
+    },
+
+    {
+        image:"/source6/car-lights2.jpg",
+        text:"Dónde está ubicada la tercer luz de freno?",
+        options: "12345".split("").map(n=>`En (${n})`),
+        correctIndex: 3
+    },
+
+    {
+        text:"Cuál es la velocidad mínima en autopistas?",
+        options: [
+            "60 km/h",
+            "70 km/h",
+            "80 km/h"
+        ],
+        correctIndex: 0
+    },
+
+    {
+        text:"Cuántos metros, como mínimo, debemos circular por el carril más cercano al lado al que deseamos girar?",
+        options: [
+            "10 metros",
+            "30 metros",
+            "50 metros"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Si un vehículo sobrepasa a otro vehículo que circula en otro carril, cómo se llama la maniobra?",
+        options: [
+            "Adelantamiento",
+            "Sobrepaso"
+        ],
+        correctIndex: 0
+    },
+
+    {
+        text:"Si un vehículo sobrepasa a otro vehículo que tiene en frente utilizando otro carril, cómo se llama la maniobra?",
+        options: [
+            "Adelantamiento",
+            "Sobrepaso"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Cómo se le denomina al carril resaltado en esta imagen?",
+        options: [
+            "Carril de aceleración",
+            "Carril de desaceleración",
+            "Carril de empalme",
+            "Carril alterno"
+        ],
+        correctIndex: 1,
+        image:"/source6/carril-salida.jpg"
+    },
+
+    {
+        text:"Cuál es la velocidad máxima en la que debería adecuarse el vehículo en esta imagen dada la siguiente situación de niebla ?",
+        image:"/source6/niebla.jpg",
+        options: [
+            "a la velocidad máxima que la vía permita",
+            "a 60 km/h",
+            "a 30 km/h"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Si un conductor detiene su vehículo al costado de la vía, se baja del mismo y se dirije hacia un departamento donde comienza una conversación que se extiende por más de 2 minutos con un vecino, el vehículo se encuentra en...",
+        options: [
+            "Detención",
+            "Estacionado (y es motivo de infracción)" 
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Qué distancia aproximada debe dejar un vehículo con respecto al cordón de la vereda al estacionarlo?",
+        options: [
+            "10 centímetros",
+            "20 centímetros",
+            "50 centímetros"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"El siguiente vehículo se encuentra bien estacionado si está en frente de su casa?",
+        options: [
+            "Sí",
+            "No"
+        ],
+        correctIndex: 1,
+        image:"/source6/estacionado.jpg"
+    },
+
+    {
+        text:"Si tuvieras que estacionar tu vehículo en una pendiente descendente, cómo deberías dejar posisionadas las ruedas del auto?",
+        options: [
+            "orientadas hacia el cordón de la vereda",
+            "orientardas hacia el centro de la calzada",
+            "Es indistinto, el freno de mano es suficiente"
+        ],
+        correctIndex:0
+    },
+
+    {
+        text:"En CABA, a menos que una señal que indique lo contrario, en una calle de un solo sentido, dónde se puede estacionar generalmente?",
+        options: [
+            "Sobre la acera izquierda",
+            "Sobre la acera derecha",
+            "Ninguna"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Complete: Está prohibido conducir cualquier tipo de vehículo con más de ______ gramos de alcohol por litro de sangre.",
+        options: [
+            "0.2",
+            "0.5",
+            "1.0"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"En un procedimiento de alcoholemia, cuál de las siguientes opciones resultaría en la retención de la licencia de conducir del conductor?",
+        options: [
+            "Poseer más de 0.5 g/l de alcohol en sangre",
+            "Negarse a realizar una prueba de alcoholemia",
+            "Todas las anteriores"
+        ],
+        correctIndex:2
     }
 
-    //TODO...
+    //TODO... pag 96
     
 
-];
+].map(q=>({ ...q, image:q.image? process.env.PUBLIC_URL+q.image : undefined}));

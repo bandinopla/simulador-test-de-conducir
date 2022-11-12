@@ -4,6 +4,7 @@ import { Source2Provider } from "../providers/Source2.provider";
 import { Source3Provider } from "../providers/Source3.provider";
 import { Source4Provider } from "../providers/Source4.provider";
 import { Source5Provider } from "../providers/Source5.provider";
+import { Source6Provider } from "../providers/Source6.provider";
 import { Source7Provider } from "../providers/Source7.provider";
 
 
@@ -15,8 +16,9 @@ export class Quiz {
         new Source2Provider(),
         new Source3Provider(),
         new Source4Provider(),
-        new Source5Provider(),
-        new Source7Provider()
+        new Source5Provider(), 
+        new Source7Provider(),
+        new Source6Provider(),
     ]
 
     private _limit:number;
