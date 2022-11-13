@@ -55,14 +55,19 @@ export class Quiz {
         this._correctPercentToPass = seApruebaCon;
 
         //flatmapear el array...
-        const all: Question[] = this.providers.reduce( (rtrn, prov, provIndex)=>{
+        const all: NumeredQuestion[] = this.providers.reduce( (rtrn, prov, provIndex)=>{
 
             if( providersON[provIndex] )
             {
                 for (let i = 0; i < prov.totalQuestions(); i++) {
 
                     /** @ts-ignore */
-                    rtrn.push( prov.getQuestion(i) );
+                    rtrn.push( { ...prov.getQuestion(i), 
+                                    source: {
+                                        ...prov.source,
+                                        index: provIndex
+                                    }, 
+                                    number:0 } );
                 }
             } 
 

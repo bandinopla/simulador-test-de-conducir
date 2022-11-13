@@ -156,3 +156,8 @@ header {
 .switch:hover {
   filter: brightness(.9);
 }
+
+.question-source {
+    font-size: 0.6em;
+    color:#999;
+}

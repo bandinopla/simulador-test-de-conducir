@@ -72,6 +72,7 @@ function App() {
                         {question.image && <Image src={question.image} />}
 
                         <strong>{question.text}</strong>
+                        <br/><span className="question-source">Fuente <strong>#{question.source.index!+1}</strong>: <a href={question.source.link} target="_blank">{question.source.name}</a> </span>
                     </div>
                 }
 

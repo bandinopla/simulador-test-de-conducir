@@ -7,11 +7,13 @@ export type Question = {
 
 export type SourceLink = {
     name:string,
-    link:string
+    link:string,
+    index?:number
 }
 
 export type NumeredQuestion = {
-    number:number
+    number:number,
+    source:SourceLink
 } & Question;
 
 export interface IQuestionProvider {
