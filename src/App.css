@@ -43,6 +43,22 @@ body {
   }
 }
 
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(2px) }
+    50% { transform: translateX(-2px) }
+    75% { transform: translateX(2px) }
+    100% { transform: translateX(0) }
+}
+
+@keyframes vertical-shaking {
+    0% { transform: translateY(0) } 
+    50% { transform: translateY(-5px) } 
+    100% { transform: translateY(0) }
+}
+
+
+
 header {
     border-bottom:2px solid #007BC7;
 }
@@ -72,11 +88,13 @@ header {
 .option.isCorrect {
     background-color: mediumseagreen;
     color:white;
+    animation: vertical-shaking 0.9s infinite;
 }
 
 .option.isIncorrect {
     background-color: crimson;
     color:white;
+    animation: horizontal-shaking 0.3s infinite;
 }
 
 .questions-number-input {
