@@ -763,9 +763,142 @@ export const source:Question[] = [
             "Todas las anteriores"
         ],
         correctIndex:2
-    }
+    },
 
     //TODO... pag 96
+    {
+        text:"Dormir pocas horas tiene influencia en el rendimiento intelectual del conductor?",
+        options: [
+            "No, conozco un amigo que duerme 2 horas y maneja bien.",
+            "Sí, también dificulta la concentración y la utilización de la memoria."
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Si se reparte la atención entre la tarea principal (conducir) y otras secundarias se...",
+        options: [
+            "... ahorra tiempo para hacer más cosas.",
+            "... muestra destreza al volante al requerir menos atención para conducir.",
+            "... resta capacidad de respuesta frente a imprevistos." 
+        ],
+        correctIndex: 2
+    },
+
+    {
+        text:"Cuál de las siguientes actitudes al volante NO es deseada?",
+        options: [
+            "Tolerante",
+            "Solidario",
+            "Exhibicionista",
+            "Prudente"
+        ],
+        correctIndex:2
+    },
+
+    {
+        text:"Cada vez que se deba hacer uso de un vehículo, qué componentes se deben verificar estén en correcto funcionamiento y nivel?",
+        options: [
+            "Nivel de aceite",
+            "Nivel del líquido refrigerante",
+            "Estado del limpiaparabrisas y líquido",
+            "Luces",
+            "Sistema de frenos (líquido y pastillas).",
+            "Neumáticos (estado, dibujo, presión y vencimiento)",
+            "Batería",
+            "Todas las anteriores"
+        ],
+        correctIndex: 7
+    },
+
+    {
+        text:"El Sistema de Frenos ABS es obligatorio?",
+        options:[
+            "Sí",
+            "No"
+        ],
+        correctIndex: 1
+    },
+
+    {
+        text:"Cuál de los siguientes factores podría incrementar de forma no deseada la distancia de frenado de un vehículo?",
+        options: [
+            "Baja presión de los neumáticos",
+            "Amortiguadores en mal estado",
+            "Neumáticos nuevos"
+        ],
+        correctIndex:1
+    },
+
+    {
+        text:"Qué sistema del vehículo está encargado de garantizar la correcta maniobra del vehículo?",
+        options:[
+            "El Sistema de suspensión",
+            "El sistema de dirección", 
+        ],
+        correctIndex:1
+    },
+
+    {
+        text:"El siguiente neumático, se encuentra en condiciones para circular?",
+        options: [
+            "Sí",
+            "No"
+        ],
+        correctIndex:1,
+        image:"/source6/neumatico.jpg"
+    },
+
+    {
+        text:"Qué neumático de los que se muestran en la imagen posee una presión excesiva?",
+        options: [
+            "A",
+            "B",
+            "C"
+        ],
+        correctIndex:1,
+        image:"/source6/neumaticos.jpg"
+    },
+
+    {
+        text:"El siguiente conductor se encuentra sentado de forma segura para conducir?",
+        options: [
+            "Sí",
+            "No" 
+        ],
+        correctIndex:0,
+        image:"/source6/apoyacabeza.jpg"
+    },
+
+    {
+        text:"Según la Ley Nº 5294, es correcta la forma en la que la mujer en esta imagen lleva a su hijo?",
+        options: [
+            "Sí, ya que no hay nada más fuerte que el abrazo de una madre.",
+            "No, el bebé debe viajar atrás y estar sujeto a algún sistema de retención infantil." 
+        ],
+        correctIndex:1,
+        image:"/source6/baby.jpg"
+    },
+
+    {
+        text:"Al viajar con mascotas, dónde se las debe ubicar?",
+        options: [
+            "En el asiento de adelante",
+            "En el asiento de atrás",
+            "Es indistinto"
+        ],
+        correctIndex:1
+    },
+
+    {
+        text:"Es obligatorio llevar en el vehículo un chaleco reflectivo?",
+        options: [
+            "Sí",
+            "No", 
+        ],
+        correctIndex:0,
+        image:"/source6/chaleco.jpg"
+    }
     
 
 ].map(q=>({ ...q, image:q.image? process.env.PUBLIC_URL+q.image : undefined}));

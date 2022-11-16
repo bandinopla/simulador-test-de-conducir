@@ -91,8 +91,9 @@ function App() {
                     &nbsp;|&nbsp;Lee el <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf" target="_blank">Manual Teórico</a>
                 </div>
 
-                <div style={{ color: "#666", fontSize: "0.8em", whiteSpace:"break-spaces" }}>
-                    Fuente de los datos: {quiz.sourceLinks.map((source, i) => <a key={i} href={source.link} target="_blank" className="sourceLink">{source.name}</a>)}
+                <div style={{ color: "#666", fontSize: "0.8em", whiteSpace:"break-spaces", margin:"20px auto" }}>
+                    Fuente de los datos: <br/>
+                    {quiz.sourceLinks.map((source, i) => <div key={i} ><strong>[{i+1}] </strong><a href={source.link} target="_blank" className="sourceLink">{source.name}</a></div>)}
                 </div>
             </main>
 
