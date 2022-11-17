@@ -461,7 +461,7 @@ export const source:Question[] = [
             "Sí",
             "No"
         ],
-        correctIndex:0,
+        correctIndex:1,
         image:"/source6/linea.jpg"
     },
 
@@ -527,7 +527,7 @@ export const source:Question[] = [
     },
 
     {
-        text:"En una intersección no semaforizada donde cruce es entre una avenida y una calle, quién tiene prioridad de paso si tu vehículo viene por la calle?",
+        text:"En una intersección no semaforizada donde el cruce es entre una avenida y una calle, quién tiene prioridad de paso si tu vehículo viene por la calle?",
         options: [ 
             "El vehículo que viene por la avenida, sea cual sea la mano del tránsito",
             "Mi vehículo, si estoy de la mano derecha del tránsito de la avenida",
@@ -857,7 +857,7 @@ export const source:Question[] = [
             "C"
         ],
         correctIndex:1,
-        image:"/source6/neumaticos.jpg"
+        image:"/source6/naumaticos.jpg" //lpm lo escribí mal...
     },
 
     {

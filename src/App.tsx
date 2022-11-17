@@ -1,15 +1,19 @@
 
-import { PropsWithChildren, useEffect, useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import './App.css';
 import Header from './component/Header';
 import { Image } from './component/Image';
-import { NumeredQuestion, Question } from './providers/QuestionProvider';
+import { NumeredQuestion } from './providers/QuestionProvider';
 import { Quiz } from './quiz/Quiz';
 import { ConfigScreen } from './screen/ConfigScreen';
 import { ResultsScreen } from './screen/ResultsScreen';
 
 
 const quiz = new Quiz();
+type OptionResorted = {
+    text:string,
+    originalIndex:number
+}
 
 
 function App() {
@@ -52,6 +56,26 @@ function App() {
         setAnswer(-3);
     }
 
+    const questionOptions = useMemo<OptionResorted[]|undefined>(()=>{
+
+        //barajar opciones para evitar que uno se memorize la posisión de la opción en base a la pregunta en vez de la respuesta.
+        if( question?.options )
+        {
+            let options = question?.options;
+
+            // remapear para no perder el indexOriginal...
+            let rtrn : OptionResorted[] = question?.options.map((option,i)=>({ text:option, originalIndex:i }));
+
+            // Barajar las opciones...
+            for (let i = rtrn.length - 1; i > 0; i--) { 
+                const j = Math.floor(Math.random() * (i + 1));
+                [rtrn[i], rtrn[j]] = [rtrn[j], rtrn[i]];
+            }  
+
+            return rtrn;
+        }
+
+    }, [question]);
 
 
     return (
@@ -76,7 +100,9 @@ function App() {
                     </div>
                 }
 
-                {question?.options.map((option, i) => <div key={i} className={`option ${answer > -1 ? question.correctIndex == i ? "isCorrect" : answer == i ? "isIncorrect" : "" : ""}`} onClick={() => setMyAnswer(i)}>{option}</div>)}
+                {   questionOptions?.map((option, i) => <div key={i} className={`option ${answer > -1 ? question!.correctIndex == option.originalIndex ? "isCorrect" : answer == option.originalIndex ? "isIncorrect" : "" : ""}`} onClick={() => setMyAnswer(option.originalIndex)}>{option.text}</div>)
+                                     
+                }
 
                 {answer > -1 && <div className='next-question'>
                     <a href="#" onClick={next}><strong>Siguiente →</strong></a>
