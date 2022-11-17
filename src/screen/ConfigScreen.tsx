@@ -117,7 +117,7 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto: boolean, barajar
         <h3>Evaluar <input className="questions-number-input" ref={total} size={3} type="text" placeholder="total" /> preguntas aleatorias de las siguientes fuentes:</h3>
 
         <div className="question-sources-container">
-            {quiz.sourceLinks.map((source, i) => <div key={i} style={{ padding: 10 }}>
+            {quiz.sourceLinks.map((source, i) => <div key={i} style={{ padding: 5 }}>
                 <Switch on={use[i]} setTo={value => setUseProvider(i, value)} /> Fuente <strong>#{i + 1}</strong>: <a href={source.link} target="_blank">{source.name}</a>
             </div>)}
 
