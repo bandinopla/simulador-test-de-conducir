@@ -27,38 +27,52 @@ const savedUseState = () => {
  * a pedido de https://www.reddit.com/user/Jauretche/
  * https://www.reddit.com/r/argentina/comments/yt42lg/comment/iw2uiws/?context=3 
  */
-const savedAutoAdvance = ()=> {
+// const savedAutoAdvance = ()=> { 
+//     var saved = false; 
+//     try {
+//         saved = JSON.parse(localStorage.getItem('autoadvance') ?? "false"); 
+//     }
+//     catch (e) {
+//         // nothing...
+//     } 
+//     return saved;
+// }
 
-    var saved = false;
+const savedBoolean = (id: string, defaultValue: boolean = false) => {
+
+    var val = defaultValue;
 
     try {
-        saved = JSON.parse(localStorage.getItem('autoadvance') ?? "false"); 
+        val = JSON.parse(localStorage.getItem(id) ?? "false") || defaultValue;
     }
     catch (e) {
         // nothing...
     }
 
-    return saved;
+    return val;
 }
 
 
-export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void }> = ({ quiz, start }) => {
+
+
+export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto: boolean, barajarOpciones: boolean) => void }> = ({ quiz, start }) => {
 
     const percent = useRef<HTMLInputElement>(null);
     const total = useRef<HTMLInputElement>(null);
     const [use, setUse] = useState<boolean[]>(savedUseState() || new Array(quiz.sourceLinks.length).fill(true));
-    const [auto, setAuto] = useState<boolean>(savedAutoAdvance())
+    const [auto, setAuto] = useState<boolean>(savedBoolean("autoadvance"))//(savedAutoAdvance());
+    const [barajaOpciones, setBarajaOpciones] = useState<boolean>(savedBoolean("baraja-opciones"));
 
 
     useLayoutEffect(() => {
 
-        percent.current!.value = (parseInt(localStorage.getItem('percent2pass')||"0") || DEFAULT_PERCENT).toString();
-        total.current!.value = (parseInt(localStorage.getItem('total')||"0") || DEFAULT_TOTAL).toString();
+        percent.current!.value = (parseInt(localStorage.getItem('percent2pass') || "0") || DEFAULT_PERCENT).toString();
+        total.current!.value = (parseInt(localStorage.getItem('total') || "0") || DEFAULT_TOTAL).toString();
 
         return () => {
 
             localStorage.setItem('percent2pass', parseInt(percent.current!.value).toString() || DEFAULT_PERCENT.toString());
-            localStorage.setItem('total', parseInt(total.current!.value).toString() || DEFAULT_TOTAL.toString()); 
+            localStorage.setItem('total', parseInt(total.current!.value).toString() || DEFAULT_TOTAL.toString());
         }
 
     }, []);
@@ -73,9 +87,14 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void 
         setUse([...use]);
     }
 
-    const onSetAuto : (val:boolean)=>void = val => {
-        localStorage.setItem('autoadvance', JSON.stringify(val) );
+    const onSetAuto: (val: boolean) => void = val => {
+        localStorage.setItem('autoadvance', JSON.stringify(val));
         setAuto(val)
+    }
+
+    const setBarajaOptions: (val: boolean) => void = val => {
+        localStorage.setItem('baraja-opciones', JSON.stringify(val));
+        setBarajaOpciones(val)
     }
 
     const iniciar = () => {
@@ -89,7 +108,7 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void 
         }
 
         quiz.init(limit, use, sePasaCon);
-        start(auto);
+        start(auto, barajaOpciones);
     }
 
 
@@ -106,8 +125,10 @@ export const ConfigScreen: React.FC<{ quiz: Quiz, start: (auto:boolean) => void 
 
         <h3 className="question-config-percentage">Se aprueba con <input className="questions-number-input" ref={percent} size={3} type="text" placeholder="total" /> % correctas.</h3>
 
-        <h4>
-            <Switch on={auto} setTo={ nvalue=>onSetAuto(nvalue) }/> Avanzar automaticamente si respondí bien.</h4>
+        <h4> <Switch on={auto} setTo={nvalue => onSetAuto(nvalue)} /> Avanzar automaticamente si respondí bien (ahorra tiempo)</h4>
+        <h4> <Switch on={barajaOpciones} setTo={nvalue => setBarajaOptions(nvalue)} /> Barajar opciones de la pregunta también.
+            <br /><sub>↳ Para evitar memorizar el orden de la respuesta correcta.</sub>
+        </h4>
 
         <div className='next-question'>
             <a href="#" onClick={iniciar}><strong>Iniciar ⇒ </strong></a>

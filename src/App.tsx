@@ -21,6 +21,7 @@ function App() {
     const [question, setQuestion] = useState<NumeredQuestion | undefined>();
     const [autoMode, setAutoMode] = useState<boolean>(false);
     const timer = useRef<NodeJS.Timeout>();
+    const barajarOpciones = useRef<boolean>(false);
 
     /**
      * Para esta app, como solo nos importa en el momento de contestar si está bien o mal, no hace falta recordar el pasado. Con esto alcanza y sobra...
@@ -66,11 +67,14 @@ function App() {
             // remapear para no perder el indexOriginal...
             let rtrn : OptionResorted[] = question?.options.map((option,i)=>({ text:option, originalIndex:i }));
 
-            // Barajar las opciones...
-            for (let i = rtrn.length - 1; i > 0; i--) { 
-                const j = Math.floor(Math.random() * (i + 1));
-                [rtrn[i], rtrn[j]] = [rtrn[j], rtrn[i]];
-            }  
+            if( barajarOpciones.current )
+            {
+                // Barajar las opciones...
+                for (let i = rtrn.length - 1; i > 0; i--) { 
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [rtrn[i], rtrn[j]] = [rtrn[j], rtrn[i]];
+                } 
+            } 
 
             return rtrn;
         }
@@ -82,7 +86,7 @@ function App() {
         <div className="App">
             <Header />
             <main className="main-content">
-                {!question && !quiz.termino() && <ConfigScreen quiz={quiz} start={(auto) => { setAutoMode(auto) ; setQuestion(quiz.getQuestion()) }} />}
+                {!question && !quiz.termino() && <ConfigScreen quiz={quiz} start={(auto, barajaOpciones) => { barajarOpciones.current=barajaOpciones; setAutoMode(auto) ; setQuestion(quiz.getQuestion()) }} />}
 
                 {!question && quiz.termino() && <ResultsScreen quiz={quiz} restart={restart} />}
 
