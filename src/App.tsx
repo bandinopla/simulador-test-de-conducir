@@ -116,15 +116,19 @@ function App() {
                     <a href="#" onClick={restart}>↻ Reiniciar</a>
                 </div>}
 
-                <div style={{ marginTop: "50px", color: "#666", fontSize: "0.8em" }}>
-                    Algún error? <a href="https://github.com/bandinopla/simulador-test-de-conducir/issues" target="_blank">Posteá un issue / Avisanos</a>
-                    &nbsp;|&nbsp;Lee el <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf" target="_blank">Manual Teórico</a>
-                </div>
 
-                <div style={{ color: "#666", fontSize: "0.8em", whiteSpace:"break-spaces", margin:"20px auto" }}>
-                    Fuente de los datos: <br/>
-                    {quiz.sourceLinks.map((source, i) => <div key={i} ><strong>[{i+1}] </strong><a href={source.link} target="_blank" className="sourceLink">{source.name}</a></div>)}
-                </div>
+                { !question && <div>
+                    <div style={{ marginTop: "50px", color: "#666", fontSize: "0.8em" }}>
+                        Algún error? <a href="https://github.com/bandinopla/simulador-test-de-conducir/issues" target="_blank">Posteá un issue</a>
+                        &nbsp;|&nbsp;Lee el <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf" target="_blank">Manual Teórico</a>
+                        &nbsp;|&nbsp;Lee el <a href={process.env.PUBLIC_URL+"/protocolo-de-examen-practico.pdf"} target="_blank">Protocolo Examen Práctico</a>
+                    </div>
+
+                    <div style={{ color: "#666", fontSize: "0.8em", whiteSpace:"break-spaces", margin:"20px auto", paddingBottom:20 }}>
+                        Fuente de los datos: <br/>
+                        {quiz.sourceLinks.map((source, i) => <div key={i} ><strong>[{i+1}] </strong><a href={source.link} target="_blank" className="sourceLink">{source.name}</a></div>)}
+                    </div>
+                </div>}
             </main>
 
 
