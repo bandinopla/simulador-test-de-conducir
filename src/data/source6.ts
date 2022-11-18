@@ -866,7 +866,7 @@ export const source:Question[] = [
             "Sí",
             "No" 
         ],
-        correctIndex:0,
+        correctIndex:1,
         image:"/source6/apoyacabeza.jpg"
     },
 
