@@ -898,6 +898,75 @@ export const source:Question[] = [
         ],
         correctIndex:0,
         image:"/source6/chaleco.jpg"
+    },
+
+    {
+        text:"En CABA, cuál es la velocidad máxima permitida en calles y colectoras de vía rápida?",
+        options: [
+            "20 km/h",
+            "30 km/h",
+            "40 km/h",
+            "50 km/h",
+            "60 km/h"
+        ],
+        correctIndex:2
+    },
+
+    {
+        text:"En CABA, cuál es la velocidad máxima permitida la Av. Gral Paz?",
+        options: [
+            "60 km/h",
+            "70 km/h",
+            "80 km/h",
+            "100 km/h",
+            "120 km/h", 
+        ],
+        correctIndex:2
+    },
+
+    {
+        text:"En CABA, cuál es la velocidad máxima permitida en la Av. Del Libertador?",
+        options: [
+            "45 km/h",
+            "60 km/h",
+            "70 km/h",
+            "80 km/h",
+            "100 km/h",
+        ],
+        correctIndex:0
+    },
+
+    {
+        text:"En CABA, cuál es la velocidad máxima permitida en pasajes y calles de convivencia?",
+        options: [
+            "10 km/h",
+            "20 km/h",
+            "30 km/h",
+            "40 km/h", 
+        ],
+        correctIndex:1
+    },
+
+    {
+        text:"En CABA, cuál es la velocidad mínima en autopista?",
+        options: [
+            "30 km/h",
+            "40 km/h",
+            "60 km/h", 
+            "80 km/h"
+        ],
+        correctIndex:2
+    },
+
+    {
+        text:"En CABA, cuál es la velocidad mínima en semiautopistas y rutas?",
+        options: [
+            "30 km/h",
+            "40 km/h",
+            "60 km/h", 
+            "80 km/h"
+        ],
+        correctIndex:1
     }
     
 
