@@ -72,7 +72,7 @@ export const source:Question[] = [
     {
         text:"Si un vehículo va por una vía estrecha de doble vía y ve esta señal, qué significa?",
         image:"/source7/signs7.jpg",
-        correctIndex:1,
+        correctIndex:0,
         options: [
             "Que si otro vehículo viene de la mano contraria tiene prioridad de paso",
             "Que el vehículo tiene prioridad de paso y deben cederle el paso",
