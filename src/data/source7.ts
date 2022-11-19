@@ -288,5 +288,38 @@ export const source:Question[] = [
         correctIndex: 0
     },
 
+    {
+        text: "Cuál de estas señales tiene carácter de advertencia?",
+        image:"/source7/peaton.jpg",
+        options: [
+            "1) La primera",
+            "2) La segunda", 
+            "Ambas"
+        ],
+        correctIndex: 0
+    },
+
+    {
+        text: "Cuál de estas señales indica sobre una zona de uso exclusivo para bicicletas?",
+        image:"/source7/peaton.jpg",
+        options: [
+            "La primera",
+            "La segunda", 
+            "La tercera"
+        ],
+        correctIndex: 2
+    },
+
+    {
+        text: "Cuál de estas señales advierte sobre un cruce de bicicletas cercano?",
+        image:"/source7/peaton.jpg",
+        options: [
+            "La primera",
+            "La segunda", 
+            "La tercera"
+        ],
+        correctIndex: 0
+    },
+
 ]
 .map(q=>({ ...q, image:q.image? process.env.PUBLIC_URL+q.image : undefined}));
