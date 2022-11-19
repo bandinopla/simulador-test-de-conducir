@@ -301,7 +301,7 @@ export const source:Question[] = [
 
     {
         text: "Cuál de estas señales indica sobre una zona de uso exclusivo para bicicletas?",
-        image:"/source7/peaton.jpg",
+        image:"/source7/bici.jpg",
         options: [
             "La primera",
             "La segunda", 
@@ -312,7 +312,7 @@ export const source:Question[] = [
 
     {
         text: "Cuál de estas señales advierte sobre un cruce de bicicletas cercano?",
-        image:"/source7/peaton.jpg",
+        image:"/source7/bici.jpg",
         options: [
             "La primera",
             "La segunda", 
