@@ -32,7 +32,7 @@ Existen muchos simuladores de examen teórico online, se unificaron datos extra�
 - [driverschool.com.ar - Categoria B Autos y Camionetas hasta 3.500kg: Test 1 a 5](https://www.driverschool.com.ar/manuales/iesvi/)
 - [Señales viales - buenosaires.gob.ar](https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf)
 - [Manual de conducción vehicular/2022 - buenosaires.gob.ar](https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf)
-- [(En progreso) Preguntas Examen Teórico Licencia de Conducir.](http://www.gob.gba.gov.ar/portal/portalgba/dppsv/cuestionario.pdf)
+- [(En progreso) Preguntas Examen Teórico Licencia de Conducir. - gob.gba.gov.ar](http://www.gob.gba.gov.ar/portal/portalgba/dppsv/cuestionario.pdf) gracias [_PPBottle](https://www.reddit.com/user/_PPBottle/) por el link!
 
 _[!] si sabés de otra fuente, avisá!_
 
