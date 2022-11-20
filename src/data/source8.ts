@@ -1379,52 +1379,218 @@ export const source:Question[] = [
     },
 
     //pag 52
+    {
+        text:"¿Qué vehículos tienen siempre prioridad de paso?:",
+        options:[
+            "Ambulancias, policía y bomberos, estén o no en servicio",
+            "Ambulancias, policía, bomberos y transporte de personas",
+            "Ambulancias, policía y bomberos, con las señales de advertencia reglamentarias activadas"
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+    {
+        text:"Los conductores principiantes deben conducir con su respectiva identificación...",
+        options:[
+            "... durante los primeros 3 meses",
+            "... durante los primeros 6 meses",
+            "... durante los primeros 12 meses",
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"La demarcación horizontal que se encuentra sobre el asfalto...",
+        options:[
+            "No se debe detener el vehículo sobre ellas en ningún caso",
+            "Se puede detener el vehículo sobre ellas sin problema",
+            "Depende el tipo de demarcación que se trate, se puede detener el vehículo. ",
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+    {
+        text:"¿Cómo debe comportarse con luz amarilla a su frente?:",
+        options:[
+            "Avanzar, como si se tratara de luz verde.",
+            "Avanzar sólo si estima que cruzará la encrucijada antes de encenderse la roja.",
+            "Sólo si la derecha le otorga prioridad de paso. "
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"¿Qué indica la luz roja intermitente a su frente?:",
+        options:[
+            "Que ha habido un accidente en el lugar",
+            "La presencia de un cruce peligroso. ",
+            "Entrada y salida de vehículos"
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"¿Que indica la luz roja del semáfaro?",
+        options:[
+            "Que debe detenerse. ",
+            " Que puede avanzar si no circula otro vehículo transversalmente.",
+            "Que puede avanzar si no cruzan peatones."
+        ],
+        correctIndex: 0,
+        image: undefined
+    },
+
+    //  Peguntas para todas las clases: Velocidades
+
+    {
+        text:" ¿Cuál es la velocidad máxima permitida en calles urbanas?: ",
+        options: [
+            "40 km. ",
+            "60 km.",
+            "80 km. "
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"Cuál es la velocidad máxima permitida en avenidas urbanas?:",
+        options: [
+            "60 km",
+            "80 km. ",
+            "90 km. "
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:" ¿Cuál es la distancia aproximada recorrida circulando a 80km/h?:",
+        options: [
+            "10 metros por segundo. ",
+            "22 metros por segundo. ",
+            "30 metros por segundo. ",
+            
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:" ¿Cual es la velocidad mínima y máxima para circular por calles en zona urbana?",
+        options: [
+            "La mínima 15 km/h y la máxima 60 km/h",
+            " La mínima 20 km/h y la máxima 40 km/h. ",
+            "La minima 30 km/h y la máxima 40 Km/h."
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:"¿A qué velocidad precautoria se debe cruzar una bocacalle sin semáforo?:",
+        options: [
+            "A la misma velocidad que la de la vía por la que circula. ",
+            "A no más de 30 km/h. ",
+            "A no más de 10 km/h. "
+        ],
+        correctIndex:2,
+        image: undefined
+    },
+    {
+        text:"Qué sistemas de comunicación, operación manual continua pueden utilizarse durante \
+        la conducción?",
+        options: [
+            "Todos, mientras no se circule en el ejido urbano",
+            " Sólo los del tipo “manos libres”. ",
+            "  Ninguno. ",
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:" La línea blanca discontinua de trazos demarcada en el centro de calzadas y rutas indica:",
+        options: [
+            "que puede ser traspasada. ",
+            "que no debe ser traspasada.",
+            "que no se puede circular sobre ellas."
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:" El uso de luces durante la noche es optativo",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:"La doble línea amarilla pintada en el centro de la calzada indica: ",
+        options: [
+            "prohibición de adelantarse en ambos sentidos",
+            "solo división de manos",
+            "Puente angosto. "
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"Las órdenes de los agentes de tránsito pueden modificar y aún contradecir la \
+        señalización, en casos de conflicto, conveniencia o emergencia",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"Para poder circular es obligatorio portar la Cédula de Identificación del Automotor",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"En oportunidad de realizarse la VTV la autoridad de aplicación puede constatar que el \
+        vehículo cuente con el seguro obligatorio correspondiente",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"Todo automotor destinado a circular, debe contar con placa identificatoria de dominio \
+        en el lugar indicado para ello, salvo excepción",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+
+    // //56
     // {
     //     text:"",
-    //     options:[
+    //     options: [
     //         ""
     //     ],
-    //     correctIndex: 0,
+    //     correctIndex:0,
     //     image: undefined
     // },
     // {
     //     text:"",
-    //     options:[
+    //     options: [
     //         ""
     //     ],
-    //     correctIndex: 0,
+    //     correctIndex:0,
     //     image: undefined
     // },
     // {
     //     text:"",
-    //     options:[
+    //     options: [
     //         ""
     //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
+    //     correctIndex:0,
     //     image: undefined
     // },
     
@@ -1432,3 +1598,5 @@ export const source:Question[] = [
 ]
 
 .map(q=>({ ...q, image:q.image? process.env.PUBLIC_URL+"/source8/"+q.image : undefined}));;
+
+ 
