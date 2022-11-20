@@ -7,7 +7,7 @@ export type Question = {
 
 export type SourceLink = {
     name:string,
-    link:string,
+    link?:string,
     index?:number
 }
 
