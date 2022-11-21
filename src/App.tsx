@@ -89,7 +89,7 @@ function App() {
             {!question && !quiz.termino() && <div style={{backgroundColor:"#939393"}} className="text-white py-16 mb-10 p-4">
                 <div className="main-content text-left text-shadow">
                         <h2 className="text-3xl">*Simulador de Test Teórico</h2>
-                        <div className="text-xl">Se han colecionado preguntas/respuestas de distintas fuentes a fin de crear una aplicación que permita, a quién esté en proceso de rendir un examen teórico para la obtención de una licencia de conducir en CABA, practicar la aplicación de los conocimientos adquiridos durante el estudio.</div>
+                        <div className="text-xl">Se han coleccionado preguntas/respuestas de distintas fuentes a fin de crear una aplicación que permita, a quién esté en proceso de rendir un examen teórico para la obtención de una licencia de conducir en CABA, practicar la aplicación de los conocimientos adquiridos durante el estudio.</div>
                         <div className="mt-1">[*] Las preguntas el día del examen pueden ser otras. Utilizar esto como una herramienta de estudio!</div>
                         </div>
             </div> }
