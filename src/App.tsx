@@ -51,7 +51,7 @@ function App() {
 
     const restart = () => {
 
-        if( window.confirm("¿Deseas abandonar el examen?"))
+        if( quiz.termino() || window.confirm("¿Deseas abandonar el examen?"))
         {
             clearInterval( timer.current ); 
             quiz.restart();
