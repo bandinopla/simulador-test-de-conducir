@@ -837,7 +837,7 @@ export const source:Question[] = [
             "Las opciones B y C."
         ],
         correctIndex: 0,
-        image: "abc"
+        image: "abc.jpg"
     },
 
     //Preguntas para todas las Clases: varias 
