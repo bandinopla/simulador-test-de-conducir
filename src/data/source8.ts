@@ -524,7 +524,7 @@ export const source:Question[] = [
             "B) Garantizar el cumplimiento de las normas de seguridad de los vehículos.",
             "Ambas respuestas, la A y la B, son correctas"
         ],
-        correctIndex:1 
+        correctIndex:2 
     },
     {
         text:"El titular de una licencia de conducir debe informar todo cambio de datos consignados en \
@@ -1778,134 +1778,173 @@ export const source:Question[] = [
         correctIndex: 4,
         image: undefined
     },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex: 0,
-    //     image: undefined
-    // },
+    {
+        text:"La mejor garantía de seguridad para conducir en el horario nocturno en ruta es",
+        options:[
+            "Conducir manteniendo la derecha",
+            " Circular respetando la velocidad mínima permitida.",
+            "Mantener una velocidad regular. "
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"En días de Lluvia y conduciendo por la ciudad, debemos...",
+        options:[
+            " Reducir la velocidad",
+            "Mantener la velocidad con la que se estaba conduciendo",
+            " Estacionar paralelo al cordón a la espera de que la lluvia cese a efectos de conducir con mayor visibilidad."
+        ],
+        correctIndex: 0,
+        image: undefined
+    },
+
+    //Preguntas para todas las clases: Estacionamiento
+    {
+        text:" Estacionamiento en zona urbana ¿de que lado debe realizarse?",
+        options:[
+            "Siempre debe realizarse a la derecha de la vía, paralelo a la acera",
+            "Puede realizarse en ambos lados",
+            "Siempre debe realizarse a la derecha de la vía, paralelo a la acera, salvo señalización en contrario.",
+            "Siempre debe realizarse a la izquierda de la vía. "
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+    {
+        text:"En zona urbana y en estacionamiento paralelo al cordón de la vereda, ¿qué distancia debe haber entre los vehículos?",
+        options:[
+            "30 cm.",
+            "50 cm.",
+            "20 cm"
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+    {
+        text:" ¿Cuándo puede detenerse y/o estacionar sobre la banquina?",
+        options:[
+            "Cuando tenga necesidad y por cualquier causa.",
+            "Siempre, mientras esté colocada la señalización reglamentaria (balizas)",
+            "Sólo cuando ocurra una emergencia colocando la debida señalización"
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+    {
+        text:" Estacionar en doble fila está permitido únicamente...",
+        options:[
+            "En días de lluvia, frente a establecimientos escolares",
+            "En días de lluvia, frente a hospitales.",
+            "No está permitido el estacionamiento en doble fila. "
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+    {
+        text:"¿Cómo se debe estacionar en una calle de mano única?: ",
+        options:[
+            "En el mismo sentido que la circulación del tránsito.",
+            "No interesa el sentido si guarda las distancias",
+            "No interesa el sentido si lo hace sobre la derecha y guardando las distancias reglamentarias por Ley"
+        ],
+        correctIndex: 0,
+        image: undefined
+    },
+    {
+        text:"¿Cuándo está permitido el estacionamiento en rotondas?:",
+        options:[
+            "Cuando se estaciona sobre el lado izquierdo paralelo al cordón y en el sentido de circulación",
+            " Cuando se estaciona sobre el lado derecho. ",
+            "No está permitido estacionar en rotondas"
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+
+    //Preguntas para todas las clases: Luces
+    {
+        text:"Si durante la circulación entra en un “banco de niebla”, Ud. debe...",
+        options:[
+            "Encender las luces altas. ",
+            "Asegurarse que las luces bajas estén encendidas. ",
+            "Accionar balizas. "
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"Si durante la circulación entra en un “banco de humo” originado por quema de pastizales o proveniente de fábricas, usted debe:",
+        options:[
+            "Mantener las luces bajas del vehículo. ",
+            "Accionar las balizas y disminuir la velocidad.",
+            " Accionar faros antinieblas y encender luces altas para ser mejor divisado"
+        ],
+        correctIndex: 0,
+        image: undefined
+    },
+    {
+        text:" En una ruta nacional ¿que juego de luces es obligatorio llevar?",
+        options:[
+            " Luces altas.",
+            "Luces bajas.",
+            "Luces de posicion"
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:" Si decide detenerse por intensa niebla, debe hacerlo...",
+        options:[
+            "En la banquina, correctamente señalizado.",
+            "Alejado de la calzada o banquina lo más lejos posible del camino dejando las luces y balizas encendidas. ",
+            "En la banquina, pero con luces delanteras y traseras encendidas. "
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"¿Cuando deben utilizarse las luces interiores?",
+        options:[
+            "Siempre pueden utilizarse.",
+            "Sólo podrán utilizarse las luces interiores cuando no incidan directamente en la visión del conductor",
+            "Podrán utilizarse las luces interiores en pleno viaje y cuando no incidan directamente en la visión del conductor."
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"El cambio de luz de alta por baja, ¿a que distancia se debe realizar?",
+        options:[
+            "El cambio de luz alta por baja debe realizarse a una distancia suficiente a fin de evitar el efecto de encandilamiento.",
+            "Puede realizarse en cualquier momento. ",
+            "No puede realizarse nunca con un vehículo de frente. "
+        ],
+        correctIndex: 0,
+        image: undefined
+    },
+    {
+        text:"El destello de luces sólo debe usarse...",
+        options:[
+            "... para advertir una emergencia en la vía pública. ",
+            "... en los cruces de vías y para advertir los sobrepasos.",
+            "... únicamente en los cruces de vías."
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"Las luces intermitentes de emergencias deben usarse para indicar:",
+        options:[
+            "Detención temporaria en “doble fila”",
+            "Detención en peajes, zonas peligrosas o maniobras riesgosas.",
+            "Solamente cuando la detención sea para entrar o salir de estacionamientos."
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+
+    // 68
     // {
     //     text:"",
     //     options:[
