@@ -6,7 +6,9 @@ body {
 }
 .App {
   text-align: center;
+  margin-bottom: 30px;
 }
+ 
 
 .App-logo {
   height: 40vmin;
@@ -63,9 +65,21 @@ body {
 }
 
 
-
+.text-shadow {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.58);
+}
 header {
     border-bottom:2px solid #007BC7;
+    background-color: #fff;
+}
+.source-bar {
+    background-color: #585858;
+   
+    color:white;
+    padding:10px;
+}
+.source-bar a {
+    color: white;
 }
 
 .question {
@@ -92,6 +106,10 @@ header {
     box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.11);
     -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.11);
     -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.11);
+    transition: background-color 0.1s;
+}
+.option:hover {
+    background-color: #eee;
 }
 
 .option.isCorrect {
@@ -100,10 +118,15 @@ header {
     animation: vertical-shaking 0.9s infinite;
 }
 
+
 .option.isIncorrect {
     background-color: crimson;
     color:white;
     animation: horizontal-shaking 0.3s infinite;
+}
+
+input {
+    border-bottom: 2px solid blue;;
 }
 
 .questions-number-input {
@@ -112,26 +135,38 @@ header {
   font-weight: bold;
   font-size: 25px;
 }
+ 
 
-.question-sources-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: max-content;
-  margin: auto;
-}
-
-.question-config-percentage {
-  border:2px solid #666;
+.user-input-setting-box {
+  background-color: white;
   display: inline-block;
-  padding: 10px;
-}
+  border:1px dotted #666;
+  padding: 10px 30px;
+  margin:20px;
+} 
 
 .next-question {
     font-size: 2em;
     cursor: pointer;
-    margin-top: 50px;
-    
+    margin-top: 50px; 
+
+}
+.next-question a { 
+    background-color: #FAD704;
+    text-decoration: none;
+    color:#444;
+    padding:10px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; 
+    transition: background-color 0.2s;
+    box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.88);
+    -webkit-box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.88);
+    -moz-box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.88);
+}
+.next-question a:hover {
+    background-color: #26B6E9;
+    color:white
 }
 
 .pager {

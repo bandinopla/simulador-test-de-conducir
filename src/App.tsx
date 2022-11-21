@@ -85,8 +85,20 @@ function App() {
     return (
         <div className="App">
             <Header />
+
+            {!question && !quiz.termino() && <div style={{backgroundColor:"#939393"}} className="text-white py-16 mb-10 p-4">
+                <div className="main-content text-left text-shadow">
+                        <h2 className="text-3xl">*Simulador de Test Teórico</h2>
+                        <div className="text-xl">Se han colecionado preguntas/respuestas de distintas fuentes a fin de crear una aplicación que permita, a quién esté en proceso de rendir un examen teórico para la obtención de una licencia de conducir en CABA, practicar la aplicación de los conocimientos adquiridos durante el estudio.</div>
+                        <div className="mt-1">[*] Las preguntas el día del examen pueden ser otras. Utilizar esto como una herramienta de estudio!</div>
+                        </div>
+            </div> }
+
             <main className="main-content">
-                {!question && !quiz.termino() && <ConfigScreen quiz={quiz} start={(auto, barajaOpciones) => { barajarOpciones.current=barajaOpciones; setAutoMode(auto) ; setQuestion(quiz.getQuestion()) }} />}
+                {!question && !quiz.termino() && <div>
+                    
+                    <ConfigScreen quiz={quiz} start={(auto, barajaOpciones) => { barajarOpciones.current=barajaOpciones; setAutoMode(auto) ; setQuestion(quiz.getQuestion()) }} />
+                    </div>}
 
                 {!question && quiz.termino() && <ResultsScreen quiz={quiz} restart={restart} />}
 
@@ -122,12 +134,13 @@ function App() {
                         Algún error? <a href="https://github.com/bandinopla/simulador-test-de-conducir/issues" target="_blank">Posteá un issue</a>
                         &nbsp;|&nbsp;Lee el <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/manual_2022_compressed.pdf" target="_blank">Manual Teórico</a>
                         &nbsp;|&nbsp;Lee el <a href={process.env.PUBLIC_URL+"/protocolo-de-examen-practico.pdf"} target="_blank">Protocolo Examen Práctico</a>
+                        &nbsp;|&nbsp;by <strong>Bandinopla</strong>
                     </div>
 
-                    <div style={{ color: "#666", fontSize: "0.8em", whiteSpace:"break-spaces", margin:"20px auto", paddingBottom:20 }}>
+                    {/* <div style={{ color: "#666", fontSize: "0.8em", whiteSpace:"break-spaces", margin:"20px auto", paddingBottom:20 }}>
                         Fuente de los datos: <br/>
                         {quiz.sourceLinks.map((source, i) => <div key={i} ><strong>[{i+1}] </strong><a href={source.link} target="_blank" className="sourceLink">{source.name}</a></div>)}
-                    </div>
+                    </div> */}
                 </div>}
             </main>
 
