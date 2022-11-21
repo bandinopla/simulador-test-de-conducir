@@ -51,10 +51,13 @@ function App() {
 
     const restart = () => {
 
-        clearInterval( timer.current ); 
-        quiz.restart();
-        setQuestion(undefined);
-        setAnswer(-3);
+        if( window.confirm("¿Deseas abandonar el examen?"))
+        {
+            clearInterval( timer.current ); 
+            quiz.restart();
+            setQuestion(undefined);
+            setAnswer(-3);
+        } 
     }
 
     const questionOptions = useMemo<OptionResorted[]|undefined>(()=>{
