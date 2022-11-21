@@ -1569,31 +1569,367 @@ export const source:Question[] = [
     },
 
     // //56
-    // {
-    //     text:"",
-    //     options: [
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options: [
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image: undefined
-    // },
-    // {
-    //     text:"",
-    //     options: [
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image: undefined
-    // },
+    {
+        text:"La autoridad municipal podrá disponer con carácter general, para áreas metropolitanas, \
+        la prohibición de estacionar a la izquierda en las vías de circulación urbanas",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:" El estacionamiento se debe realizar maniobrando sin empujar a los otros vehículos y \
+        sin acceder a la acera.",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"Cuando no exista cordón se estacionará lo más alejado posible del centro de la calzada, \
+        pero sin obstaculizar la circulación de peatones",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"El vehículo, o cualquier otro objeto, dejado en la vía pública por mayor lapso del \
+        establecido por la autoridad jurisdiccional, se considera abandonado, debiendo ser \
+        removido por la autoridad local.",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"Durante la circulación deben mantenerse limpios los elementos externos de \
+        iluminación del vehículo, excepto en rutas.",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:"La prohibición de ceder o permitir la conducción a personas sin habilitación para \
+        ello, comprende a los dependientes y familiares del propietario o tenedor del vehículo, no \
+        pudiendo éste invocar desconocimiento del uso indebido como eximente",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"Cualquier maniobra de retroceso, en los casos permitidos, debe efectuarse a velocidad reducida",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:" Los correajes de seguridad que posean los vehículos determinarán el número de \
+        ocupantes que pueden ser transportados en el mismo",
+        options: [
+            "Verdadero","Falso"
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+
+    //58
+    {
+        text:"¿Cuando hay que usar el cinturon de seguridad?",
+        options: [
+            "Hay que circular con el mismo abrochado en todos los casos. ",
+            " Sólo si se circula a gran velocidad.",
+            "Solo en zonas rurales."
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"Quienes deben utilizar el cinturón de seguridad?",
+        options: [
+            "El conductor",
+            " Aquellos que van en la parte delantera del vehículo",
+            "Todos los ocupantes"
+        ],
+        correctIndex:2,
+        image: undefined
+    },
+    {
+        text:" En una interseccion, entre una semi autopista y una avenida ¿quien tiene la prioridad de paso?",
+        options: [
+            " Quien circula por la avenida. ",
+            "  Quien circula por una semi autopista. ",
+            "El vehiculo de mayor porte. "
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+
+    //Preguntas para todas las clases. : Adelantamiento
+
+    {
+        text:" ¿Por donde se debe realizar el adelantamiento?",
+        options: [
+            "Debe hacerse siempre por la izquierda.",
+            "Debe hacerse por izquierda, y por la derecha, cuando el vehículo de adelante indique \
+            que va a girar o detenerse sobre el lado izquierdo.",
+            " Debe hacerse siempre por la derecha."
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:" ¿Se puede realizar una maniobra de adelantamiento al atravesar un túnel o puente en la ruta?",
+        options: [
+            " Si.",
+            "No.",
+            " Depende de las circunstancias. "
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:" ¿Cuando puede producirse el adelantamiento?",
+        options: [
+            "No puede comenzarse el adelantamiento de un vehículo que previamente ha indicado su \
+            intención de hacer lo mismo mediante la señal pertinente. ",
+            "Puede hacerse si el vehículo viene a menor velocidad. ",
+            "Puede hacerse si el vehículo viene a mayor velocidad."
+        ],
+        correctIndex:0,
+        image: undefined
+    },
+    {
+        text:"¿Quien tiene prioridad de adelantamiento?",
+        options: [
+            "Cuando varios vehículos marchen encolumnados, la prioridad para adelantarse \
+            corresponde al que circula inmediatamente detrás del primero. ",
+            "La prioridad le corresponde al último vehículo.",
+            "La prioridad le corresponde al primer vehículo que coloque la luz de giro. "
+        ],
+        correctIndex:0,
+        image: undefined
+    },
     
+    {
+        text:"En caso de adelantamiento, ¿cómo se debe advertir al que precede la intención de sobrepasarlo?",
+        options:[
+            " Por medio de destellos de las luces frontales o la bocina en zona rural. ",
+            " En todos los casos, debe utilizar el indicador de giro izquierdo hasta concluir su desplazamiento lateral. ",
+            "Accionando la bocina",
+
+        ],
+        correctIndex:1,
+        image: undefined
+    },
+    {
+        text:" Indique en cuales de las siguientes zonas esta prohibida la maniobra de adelantamiento",
+        options:[
+            "En puentes",
+            " En curvas",
+            " En encrucijadas",
+            "Todas las respuestas son correctas"
+        ],
+        correctIndex: 3,
+        image: undefined
+    },
+
+    //Preguntas para todas las clases: Autopistas
+
+    {
+        text:" En una autopista ¿para que debe ser utilizado el carril extremo izquierdo?",
+        options:[
+            "Para realizar la maniobra de adelantamiento y que circulen los vehiculos de carril",
+            "Para circular a la maxima velocidad permitida y realizar la maniobra de adelantamiento",
+            "No debe utilizarse, debe estar libre para que circulen los vehiculos de emergencia."
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"Para atravesar un cruce de vías de circulación el conductor debe",
+        options:[
+            "Estar preparado para frenar o eventualmente detener su vehículo. ",
+            "No detenerse bajo ninguna circunstancia. ",
+            "Aumentar la velocidad a los fines de cruzar rápidamente sin obstruir el tránsito. "
+        ],
+        correctIndex: 0,
+        image: undefined
+    },
+    {
+        text:"Indique en cuales de las siguientes situaciones pierde la prioridad de paso quien cruza por la derecha",
+        options:[
+            "Se desemboca de una via de tierra a una pavimentada",
+            " La señalizacion especifica que indique lo contrario.",
+            " Cuando por la via transversal circule un vehiculo de mayor porte. ",
+            "Ante vehiculos de emergencia en cumplimiento de su funcion.",
+            "Todas las respuestas son correctas. "
+        ],
+        correctIndex: 4,
+        image: undefined
+    },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex: 0,
+    //     image: undefined
+    // },
 
 ]
 
