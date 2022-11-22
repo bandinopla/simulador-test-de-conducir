@@ -1945,29 +1945,247 @@ export const source:Question[] = [
     },
 
     // 68
+    {
+        text:"El uso de luces bajas o alcance medio es obligatorio en zona rural, ruta, carretera autopista o semiautopista",
+        options:[
+            "Desde el crepúsculo hasta el alba. ",
+            " Durante las 24 horas del día sin importar las condiciones climáticas. ",
+            " Durante las 24 horas del día sólo si la visibilidad es escasa. "
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:" El destello de luces sólo debe usarse:",
+        options:[
+            "Para advertir una emergencia en la vía pública. ",
+            "En los cruces de vías y para advertir los sobrepasos",
+            " Únicamente en los cruces de vías. "
+        ],
+        correctIndex: 1,
+        image: undefined
+    },
+    {
+        text:"Las luces intermitentes de emergencias deben usarse para indicar:",
+        options:[
+            "Detención temporaria en “doble fila”. ",
+            "Detención en peajes, zonas peligrosas o maniobras riesgosas. ",
+            "Solamente cuando la detención sea para entrar o salir de estacionamientos. "
+        ],
+        correctIndex: 2,
+        image: undefined
+    },
+
+    {
+        text:" Las luces de giro deben encenderse, conforme a sus fines:",
+        options:[
+            "Aunque la luz natural sea suficiente. ",
+            "Sólo en horas nocturnas. ",
+            "Sólo en zona urbana sin importar la luz reinante. "
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+
+    //Preguntas para todas las clases: Giros y rotondas:
+    
+    {
+        text:"Para realizar un giro o circular en rotondas se debe:",
+        options:[
+            "Dar prioridad de paso al que circula desde la derecha.",
+            "Respetar la señalización.",
+            "Dar prioridad de paso al vehículo de mayor porte. "
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"¿En las vías mano simple se puede girar a la izquierda?",
+        options:[
+            " No, no se puede girar de ningún modo. ",
+            "No, no está permitido salvo señalización que así lo permite. ",
+            "Si, se puede realizar ese giro. "
+        ],
+        correctIndex:2,
+        image:undefined
+    },
+    {
+        text:" La maniobra de giro puede ser causante de un siniestro si no se efectúa tomando los \
+        recaudos necesarios. Para realizar un giro debe respetarse la señalización, y circular: ",
+        options:[
+            " Lo más próximo posible al vehículo que está por delante disminuyendo la velocidad.",
+            "Desde 30 metros antes por el costado más próximo al giro a efectuar.",
+            "Desde 50 metros antes por el costado más próximo al giro a efectuar."
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"¿Cómo debe advertir la maniobra de giro?:",
+        options:[
+            "Mediante la señal luminosa correspondiente y con debida anticipación. ",
+            "Sacando el brazo por la ventanilla, con la señal luminosa correspondiente y con la debida anticipación",
+            "No es necesario advertir la maniobra"
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"¿Puede detenerse durante la circulación en rotonda?:",
+        options:[
+            "Únicamente sobre la derecha con la debida señalización. ",
+            "Únicamente sobre la izquierda con la debida señalización. ",
+            "No está permitido detenerse. "
+        ],
+        correctIndex:2,
+        image:undefined
+    },
+    {
+        text:"Si desea girar a la derecha desde una calle de sentido único, ¿qué maniobra se debe realizar? ",
+        options:[
+            "Debo acercar el automóvil al centro de la calle y luego girar. ",
+            " Debo acercar el automóvil a la derecha y luego girar. ",
+            " Debo acercar el automóvil a la izquierda y luego girar"
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"En rotonda, ¿tiene prioridad de paso el que circula por ella o el que intenta ingresar?:",
+        options:[
+            "El que circula por ella. ",
+            "El que circula desde la derecha. ",
+            "El que intenta ingresar. "
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"Vías multicarriles:",
+        options:[
+            "La advertencia sobre cambio de carril, mediante la luz de giro, se realizará con una \
+            antelación mínima de DIEZ SEGUNDOS (10”).",
+            "La advertencia sobre cambio de carril, mediante la luz de giro, se realizará con una \
+            antelación mínima de CINCO SEGUNDOS (5”).",
+            "La advertencia sobre cambio de carril, mediante la luz de giro, se realizará con una \
+            antelación mínima de QUINCE SGUNDOS (15”)."
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:" En el ingreso a una autopista ¿ a quien se debe ceder el paso?",
+        options:[
+            "En el ingreso a una autopista debe cederse el paso a quienes circulan por ella.",
+            " En el ingreso a una autopista debe cederse el paso a quienes circulan por la derecha",
+            "En el ingreso a una autopista debe cederse el paso a quienes circulan con mayor velocidad."
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:" En una autopista ¿para que debe ser utilizado el carril extremo izquierdo?",
+        options:[
+            " Para realizar la maniobra de adelantamiento y que circulen los vehiculos de carril.",
+            " Para circular a la maxima velocidad permitida y realizar la maniobra de adelantamiento. ",
+            "No debe utilizarse debe estar libre para que circulen los vehiculos de emergencia. "
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Los menores de edad ¿pueden obtener licencia de conducir?",
+        options:[
+            " Los menores de edad no pueden obtener licencias de conducir",
+            " Los menores de edad deberán contar para la obtención de la licencia con una autorización \
+            expresa de padre y madre y/o tutor. ",
+            " Los menores de edad pueden conducir con autorización expresa de padre o madre. "
+        ],
+        correctIndex:1,
+        image:undefined
+    }
+
+    // Preguntas para todas las clases: Señales de Tránsito e indicaciones
+    // PAG 71
     // {
     //     text:"",
     //     options:[
     //         ""
     //     ],
-    //     correctIndex: 0,
-    //     image: undefined
+    //     correctIndex:0,
+    //     image:undefined
     // },
     // {
     //     text:"",
     //     options:[
     //         ""
     //     ],
-    //     correctIndex: 0,
-    //     image: undefined
+    //     correctIndex:0,
+    //     image:undefined
     // },
     // {
     //     text:"",
     //     options:[
     //         ""
     //     ],
-    //     correctIndex: 0,
-    //     image: undefined
+    //     correctIndex:0,
+    //     image:undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex:0,
+    //     image:undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex:0,
+    //     image:undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex:0,
+    //     image:undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex:0,
+    //     image:undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex:0,
+    //     image:undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex:0,
+    //     image:undefined
+    // },
+    // {
+    //     text:"",
+    //     options:[
+    //         ""
+    //     ],
+    //     correctIndex:0,
+    //     image:undefined
     // },
 
 ]
