@@ -22,7 +22,7 @@ body {
 }
 
 .result-gifs-container iframe {
-     
+        margin:0 auto;
         max-width: 100%;
 }
 
