@@ -2103,42 +2103,488 @@ export const source:Question[] = [
         ],
         correctIndex:1,
         image:undefined
-    }
+    },
 
     // Preguntas para todas las clases: Señales de Tránsito e indicaciones
     // PAG 71
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
+    {
+        text:"Ante una señal de \"pare\" Ud debe:",
+        options:[
+            "Disminuir la velocidad",
+            "Detener por completo el vehículo",
+            "Avanzar"
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Que indica un semáforo con luz intermitente roja?",
+        options:[
+            "Que es un cruce riesgoso y efectuar el mismo con precaución.",
+            "Que es un cruce riesgoso y detener la marcha",
+            "Que se debe girar a la izquierda"
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Indique el orden correcto de prioridad normativa",
+        options:[
+            "Ley vigente, Señales de tránsito, ordenanza",
+            "Agente de tránsito, señales de tránsito, ley vigente.",
+            "Conductor, Señales de tránsito, Ordenanza"
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"La demarcación horizontal, tiene alcance reglamentario?",
+        options:[
+            " Solo si va acompañada a la señalización vertical.",
+            " Si, aunque no exista señal vertical"
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Que indica el señalamiento vertical de color azul",
+        options:[
+            "Restricción",
+            "Información ",
+            " Prevención"
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Que indica el señalamiento vertical con una orla roja",
+        options:[
+            "Restricción",
+            "Información ",
+            "Prevención"
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Que indica el señalamiento vertical de color amarillo",
+        options:[
+            "Restricción",
+            "Información ",
+            "Prevención"
+        ],
+        correctIndex:2,
+        image:undefined
+    },
+    {
+        text:"¿Qué está indicando el agente de tránsito al realizar esta señal a un conductor?",
+        options:[
+            " Que circule con precaución.",
+            "Que detenga el vehículo.",
+            "Que continúe avanzando."
+        ],
+        correctIndex:1,
+        image:"agente.jpg"
+    },
+    {
+        text:"Los Agentes de Tránsito pueden proceder a la detención de un vehículo únicamente con la \
+        presencia de personal policial.",
+        options:[
+            "Verdadero.",
+            "Falso."
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Si al circular por una vía y la persona señalada le indica detenerse, ¿está obligado usted a obedecer?",
+        options:[
+            "Sí, porque al ser personal de obra está autorizado a regular el paso de vehículos en el tramo donde están trabajando",
+            "Sólo si se percibe una situación riesgosa ya que el personal de obra no tiene la autoridad \
+            legal para realizar dicha indicación.",
+            " No, porque no tiene autoridad ya que la Ley sólo delega dicha función a los agentes de tránsito."
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+
+    {
+        text:"Si se encuentra en esta situación y el personal ferroviario le indica que avance, ¿qué debe hacer?",
+        options:[
+            "Avanzar porque el personal ferroviario está autorizado a regular el paso de vehículos.",
+            "Detenerme y esperar hasta que la barrera se levante porque el personal ferroviario no \
+            tiene la autoridad legal para realizar dicha indicación.",
+            "Detenerme y esperar hasta que la barrera se levante, salvo que la indicación sea \
+            realizada por un agente de tránsito ya que es la única autoridad competente. "
+        ],
+        correctIndex:0,
+        image:"vias2.jpg"
+    },
+    {
+        text:"¿Qué indican las señales transitorias naranjas ubicadas en la calzada de la presente imagen?",
+        options:[
+            "Refuerzan el significado de las líneas discontinuas del carril porque es una zona peligrosa.",
+            "Nada, no son señales de circulación y es ilegal su colocación",
+            " La prohibición de sobrepasar la línea imaginaria que las une."
+        ],
+        correctIndex:2,
+        image:"conos.jpg"
+    },
+    {
+        text:"Las señales transitorias señalizan la ejecución de trabajos de construcción y mantenimiento \
+        en la vía, o en zonas próximas a las mismas:",
+        options:[
+            "Verdadero.",
+            "Falso"
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"La señalización transitoria se encuentra como prioridad normativa sobre los semáforos, si \
+        es que modifica el régimen normal de uso de la vía. ",
+        options:[
+            "Verdadero.",
+            "Falso."
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"¿Qué tipo de señal es la siguiente imagen?",
+        options:[
+            "Reglamentaria.",
+            "Transitoria.",
+            "Informativa."
+        ],
+        correctIndex:1,
+        image:"sign2.jpg"
+    },
+    {
+        text:"Si al conducir un vehículo se encuentra en una intersección con esta señalización \
+        intermitente, ¿qué actitud debe tomar?",
+        options:[
+            "Tengo la obligación de detener la marcha y cuando no haya más vehículos circulando por \
+            la arteria que cruza, puedo reiniciarla",
+            " Al tener prioridad, debo atravesarla rápidamente para no obstaculizar la vía.",
+            " Efectuar el cruce con máxima precaución."
+        ],
+        correctIndex:2,
+        image:"yellow.jpg"
+    },
+    {
+        text:"Si al conducir un vehículo se encuentra en una intersección con esta señalización \
+        intermitente, ¿qué actitud debe tomar?",
+        options:[
+            "Detener la marcha y realizar el cruce cuando se tenga la certeza de que no existe riesgo alguno.",
+            "Al tener prioridad, debo atravesarla rápidamente para no obstaculizar la vía.",
+            "Extremar precauciones al cruzar sin la necesidad de detenerme."
+        ],
+        correctIndex:0,
+        image:"red.jpg"
+    },
+    {
+        text:"Frente a esta situación, ¿qué debe hacer el conductor del vehículo señalado con el círculo rojo?",
+        options:[
+            "Avanzar si es que el vehículo que cruza lo hace lentamente porque la prioridad de paso \
+            está dada por la luz verde.",
+            "No iniciar el cruce, hasta que el otro vehículo haya completado el suyo.",
+            "Avanzar rápidamente si el vehículo que cruza todavía no llegó a mitad del cruce, de esa \
+            manera se deja libre la intersección."
+        ],
+        correctIndex:1,
+        image:undefined
+    },
+    {
+        text:"Cuando un semáforo cambia de luz roja a verde, está habilitando a reiniciar la marcha; no \
+        obstante ello, ¿qué precauciones se deben adoptar?",
+        options:[
+            " No iniciar el cruce si no hay espacio para ubicar el vehículo del otro lado sin obstruir la \
+            circulación transversal.",
+            "Permitir, antes de avanzar, que complete el cruce otro vehículo o peatón que ya lo haya \
+            iniciado.",
+            "Ambas respuestas, la A y la B, son correctas."
+        ],
+        correctIndex:2,
+        image:undefined
+    },
+    {
+        text:"Una indicación puede estar expresada con una señal vertical o con una demarcación \
+        horizontal, ya que ambas tienen el mismo significado y orden jerárquico.",
+        options:[
+            "Verdadero",
+            "Falso"
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"¿Qué indica esta demarcación amarilla en la calzada?",
+        options:[
+            "Que es un sector destinado a la detención y al estacionamiento de vehículos.",
+            "Que se debe circular lentamente por su sector central.",
+            "Que no se debe circular sobre ella."
+        ],
+        correctIndex:2,
+        image:"isleta.jpg"
+    },
+    {
+        text:"En materia de señalamiento horizontal, ¿qué se entiende por “isleta”?",
+        options:[
+            "Son las rotondas",
+            "Son los espacios reservados para estacionamiento exclusivo de motovehículos",
+            "Son las marcas canalizadoras de tránsito. No se puede traspasar o circular sobre ellas"
+        ],
+        correctIndex:2,
+        image:undefined
+    },
+    {
+        text:"¿Qué significa esta demarcación amarilla en la calzada?",
+        options:[
+            "Es una señalización que se utiliza únicamente para dividir los carriles de la vía.",
+            "Indica, para ambos sentidos de circulación, que no debe ser traspasada ni se puede \
+            circular sobre ella.",
+            "Significa que sólo pueden circular vehículos particulares."
+        ],
+        correctIndex:1,
+        image:"doubleline.jpg"
+    },
+    {
+        text:"En la siguiente imagen, ¿qué indican las líneas centrales de la calzada señaladas?",
+        options:[
+            "Que se pueden traspasar.",
+            "Que está prohibido traspasarlas",
+            "Que es una zona de máximo peligro"
+        ],
+        correctIndex:0,
+        image:"dotted.jpg"
+    },
+    {
+        text:"¿Cuál es la importancia del color de las señales viales?",
+        options:[
+            "El color es para llamar la atención al conductor de categoría particular. ",
+            "El color es irrelevante para el conductor particular pero sí para el conductor profesional.",
+            "El color, además de su forma, brinda información al conductor sobre el trayecto de la vía \
+            por la cual circula."
+        ],
+        correctIndex:2,
+        image:undefined
+    },
+    {
+        text:"¿Cuáles son las señales preventivas?",
+        options:[
+            "Aquellas que advierten la proximidad de una circunstancia o variación de la normalidad \
+            de la vía que puede resultar sorpresiva o peligrosa a la circulación",
+            "Aquellas que no transmiten órdenes ni previenen sobre irregularidades o riesgos en la \
+            vía. Identifican, orientan y hacen referencia a servicios, lugares, etc.",
+            "Aquellas que transmiten órdenes específicas, de cumplimiento obligatorio en el lugar \
+            para el cual están destinadas."
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"¿Cuál de estas señales comunica “Prevención”?",
+        options:[
+            "A","B","C"
+        ],
+        correctIndex:1,
+        image:"signs.jpg"
+    },
+    {
+        text:"¿De qué color es la cartelería de Permitido Estacionar?",
+        options:[
+            "Azul","Blanco","Rojo"
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"¿Cuál de estas señales es “Reglamentaria“?",
+        options:[
+            "A","B","C"
+        ],
+        correctIndex:2,
+        image:"signs.jpg"
+    },
+    {
+        text:"¿Cuál de estas señales es una señal reglamentaria?",
+        options:[
+            "A","B","C"
+        ],
+        correctIndex:2,
+        image:"signs2.jpg"
+    },
+    {
+        text:"¿Cuál de estas señales es Informativa?",
+        options:[
+            "A","B","C"
+        ],
+        correctIndex:0,
+        image:"signs3.jpg"
+    },
+    {
+        text:"Indique qué tipo de señal es la que a continuación se muestra:",
+        options:[
+            "Preventiva.","Reglamentaria.","Informativa."
+        ],
+        correctIndex:2,
+        image:"sign3.jpg"
+    },
+    {
+        text:"¿Cuál de las siguientes imágenes, por forma y color, corresponde a la señal indicativa de \
+        una rotonda o pendiente pronunciada?",
+        options:[
+            "A","B","C"
+        ],
+        correctIndex:2,
+        image:"shapes.jpg"
+    },
+    {
+        text:"¿Cuál de las siguientes imágenes, por forma y color, corresponde a la señal indicativa de \
+        estar próximo a una zona afectada por obras?",
+        options:[
+            "A","B","C"
+        ],
+        correctIndex:1,
+        image:"shapes2.jpg"
+    },
+    {
+        text:"Frente a la siguiente situación de emergencia, ¿qué deben hacer los conductores que \
+        circulen en su proximidad?",
+        options:[
+            "Aumentar la velocidad para no ser un obstáculo a este vehículo.",
+            "Avisar a otros conductores de la presencia de este vehículo, usando repetidamente la bocina.",
+            "Dar lugar a este vehículo, despejar el carril de emergencias y si fuera necesario detenerse."
+        ],
+        correctIndex:2,
+        image:"ambu.jpg"
+    },
+    {
+        text:"El siguiente símbolo indica que se trata de un carril que debe ser liberado cuando se \
+        aproxima un vehículo en emergencia.",
+        options:[
+            "Verdadero.","Falso."
+        ],
+        correctIndex:0,
+        image:"e.jpg"
+    },
+    {
+        text:"Frente a la siguiente situación de emergencia, ¿hacia qué sector es recomendable que se \
+        aparten los vehículos de la imagen para facilitar el paso a la ambulancia?",
+        options:[
+            "Ambos hacia su derecha",
+            "El único que debería apartarse es el auto 2 hacia su derecha.",
+            "El auto 1 hacia su izquierda y el 2 hacia su derecha."
+        ],
+        correctIndex:2,
+        image:"emergencia.jpg"
+    },
+    {
+        text:"Frente a la siguiente situación de emergencia, ¿hacia qué sector es recomendable que se \
+        aparten los vehículos de la imagen para facilitar el paso a la ambulancia?",
+        options:[
+            "El único que debería apartarse es el auto 2 hacia su derecha.",
+            "Todos hacia su derecha.",
+            " El auto 1 hacia su izquierda, mientras que el 2 y 3 hacia su derecha."
+        ],
+        correctIndex:2,
+        image:"emergencia2.jpg"
+    },
+    {
+        text:"Frente a la siguiente situación de emergencia, ¿qué deben hacer los conductores que \
+        circulen en su proximidad? ",
+        options:[
+            "Aumentar la velocidad para no ser un obstáculo a este vehículo.",
+            "Avisar a otros conductores de la presencia de este vehículo, usando repetidamente la bocina.",
+            "Dar lugar a este vehículo, despejar el carril de emergencias y si fuera necesario detenerse."
+        ],
+        correctIndex:2,
+        image:"emergencia3.jpg"
+    },
+    {
+        text:"Indique cual es la correcta:",
+        options:[
+            "Puesto sanitario",
+            "Emergencias",
+            "Policía"
+        ],
+        correctIndex:0,
+        image:"sign4.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Detención transporte público.",
+            "Terminal ómnibus",
+            "Punto panorámico"
+        ],
+        correctIndex:1,
+        image:"sign5.jpg"
+    },
+    {
+        text:" La siguiente señal indica:",
+        options:[
+            "Hotel ",
+            "Hospital",
+            "Zona de descanso"
+        ],
+        correctIndex:0,
+        image:"sign6.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Maquinaria especial",
+            "Hombres trabajando",
+            "Equipo pesado en la vía "
+        ],
+        correctIndex:2,
+        image:"sign7.jpg"
+    },
+    {
+        text:" La siguiente señal indica:",
+        options:[
+            "Permitido girar derecha",
+            "Dirección permitida derecha",
+            "Circulación obligatoria"
+        ],
+        correctIndex:0,
+        image:undefined
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "No avanzar",
+            "Contramano",
+            "Prohibido adelantar"
+        ],
+        correctIndex:0,
+        image:"sign9.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Incorporación de tránsito lateral",
+            "Inicio doble mano",
+            "Ascenso y descenso."
+        ],
+        correctIndex:1,
+        image:"sign10.jpg"
+    },
+    {
+        text:"La siguiente señal indica",
+        options:[
+            "No estacionar",
+            "No estacionar ni detenerse ",
+            "Prohibición de circular autos."
+        ],
+        correctIndex:1,
+        image:"sign11.jpg"
+    },
+
+    //pag 90
+
     // {
     //     text:"",
     //     options:[
