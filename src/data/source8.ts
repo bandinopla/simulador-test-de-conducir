@@ -2205,7 +2205,7 @@ export const source:Question[] = [
             " No, porque no tiene autoridad ya que la Ley sólo delega dicha función a los agentes de tránsito."
         ],
         correctIndex:0,
-        image:undefined
+        image:"obrero.jpg"
     },
 
     {
