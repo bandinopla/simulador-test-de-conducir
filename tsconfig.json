@@ -3,7 +3,8 @@
         "module": "esnext",
         "target": "es2015",
         "jsx": "react-jsx",
-        "strict": true
+        "strict": true,
+        "moduleResolution": "node"
     },
     "include": [
         "./**/*"
