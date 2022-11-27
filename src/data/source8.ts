@@ -2467,7 +2467,7 @@ export const source:Question[] = [
             "Verdadero.","Falso."
         ],
         correctIndex:0,
-        image:"e.jpg"
+        image:"e2.jpg"
     },
     {
         text:"Frente a la siguiente situación de emergencia, ¿hacia qué sector es recomendable que se \
