@@ -2293,7 +2293,7 @@ export const source:Question[] = [
             manera se deja libre la intersección."
         ],
         correctIndex:1,
-        image:undefined
+        image:"ojo.jpg"
     },
     {
         text:"Cuando un semáforo cambia de luz roja a verde, está habilitando a reiniciar la marcha; no \
@@ -2683,7 +2683,7 @@ export const source:Question[] = [
             " permitido girar a la izquierda"
         ],
         correctIndex:2,
-        image:"sign20"
+        image:"sign20.jpg"
     }, 
 
     {
@@ -3273,6 +3273,1443 @@ export const source:Question[] = [
             "Sólo en el caso de que no perjudique la circulación de otros vehículos."
         ],
         "image": "tunel.jpg"
+    },
+    {
+        "text": "Cuando varios vehículos circulan encolumnados, ¿cuál de ellos tiene prioridad para realizar\nel sobrepaso?",
+        "correctIndex": 2,
+        "options": [
+            "El que lo intente primero.",
+            "El último de la fila.",
+            "El que circula más próximo al vehículo que se desea sobrepasar.\n"
+        ]
+    },
+    {
+        "text": "En esta situación, ¿quién tiene prioridad para realizar el sobrepaso al camión?",
+        "correctIndex": 2,
+        "options": [
+            "El vehículo A.",
+            "El vehículo B.",
+            "El vehículo C.\n"
+        ],
+        "image": "prioridad9.jpg"
+    },
+    {
+        "text": "Si al llegar a una intersección sin semáforos, se encuentra que el vehículo que está delante\nsuyo está detenido esperando poder doblar hacia la izquierda, ¿qué debe hacer si ud. desea\ncontinuar en línea recta?",
+        "correctIndex": 0,
+        "options": [
+            "Sobrepasarlo por la derecha de manera segura, colocando luz de giro y observando por\nlos espejos retrovisores.",
+            "Sobrepaso por la izquierda, colocando la luz de giro y observando por los espejos\nretrovisores.",
+            "Tocarle bocina para indicarle que debe seguir\n"
+        ]
+    },
+    {
+        "text": "¿Se puede traspasar la siguiente señal horizontal?",
+        "correctIndex": 0,
+        "options": [
+            "Sí, porque ordena la circulación de carriles e indica que se puede sobrepasar a otro\nvehículo.",
+            "Sólo cuando la vía tiene dos carriles por sentido de circulación.",
+            "No, porque indica prohibición de sobrepaso.\n"
+        ],
+        "image": "linea.jpg"
+    },
+    {
+        "text": "Como norma general, ¿dónde está prohibido el sobrepaso de un vehículo?",
+        "correctIndex": 2,
+        "options": [
+            "A. Donde la delimitación de carriles es de trazo continuo.",
+            "B. En curvas, encrucijadas, pasos a nivel o puentes.",
+            "C. Ambas respuestas, A y B, son correctas.\n"
+        ]
+    },
+    {
+        "text": "En un túnel, con ambos sentidos de circulación, ¿está permitido sobrepasar a un vehículo?",
+        "correctIndex": 1,
+        "options": [
+            "A. Sí, cuando no haya señal que lo prohíba.",
+            "B. No, ya que está prohibido por normativa.",
+            "C. Sí, si hay suficiente visibilidad.\n"
+        ]
+    },
+    {
+        "text": "En una vía de doble sentido de circulación, ¿qué deberá comprobar antes de iniciar un\nsobrepaso?",
+        "correctIndex": 0,
+        "options": [
+            "A. Que el vehículo que antecede, no tenga las luces intermitentes encendidas y que ningún\nvehículo circule en sentido contrario, mientras dure la maniobra de sobrepaso.",
+            "B. Que ningún otro vehículo esté realizando la maniobra de sobrepaso.",
+            "C. Ambas respuestas, A y B, son correctas\n"
+        ]
+    },
+    {
+        "text": "En este lugar, ¿está permitido sobrepasar a otro vehículo?",
+        "correctIndex": 1,
+        "options": [
+            "A. Sí, salvo que haya una señal que indique lo contrario.",
+            "B. No, está prohibido por normativa.",
+            "C. Sólo si no se perjudica la circulación de otros vehículos.\n"
+        ],
+        "image": "puente.jpg"
+    },
+    {
+        "text": "Frente a la demarcación central de la calzada señalada, ¿cuál es la conducta a seguir?",
+        "correctIndex": 0,
+        "options": [
+            "A. Se debe respetar lo que rige con respecto a la línea más próxima; si es continua no \ntraspasarla y si es discontinua está permitido hacerlo.",
+            "B. Se debe respetar lo que rige con respecto a la línea más próxima; si es discontinua no\ntraspasarla y si es continua está permitido hacerlo.",
+            "C. No debe traspasarse ninguna de ellas.\n"
+        ],
+        "image": "via.jpg"
+    },
+    {
+        "text": "¿Qué indica esta demarcación amarilla en la calzada?",
+        "correctIndex": 1,
+        "options": [
+            "A. Indica que se puede traspasar.",
+            "B. Divide sentidos opuestos de circulación e indica que está prohibido traspasarla.",
+            "C. Que es una zona que se puede circular sobre ella\n"
+        ],
+        "image": "via2.jpg"
+    },
+    {
+        "text": "El carril de sobrepaso en una autopista sirve para...",
+        "correctIndex": 2,
+        "options": [
+            "A. Circular por él cuando a la derecha existe otro carril disponible.",
+            "B. Circular por él siempre que se conduzca a la mayor velocidad permitida.",
+            "C. Realizar maniobras de sobrepaso.\n"
+        ]
+    },
+    {
+        "text": "¿A qué se denomina “carril de aceleración”?",
+        "correctIndex": 0,
+        "options": [
+            "A. Es el carril de incorporación a una autopista.",
+            "B. Es el carril derecho de una autopista.",
+            "C. Es el carril izquierdo de una autopista.\n"
+        ]
+    },
+    {
+        "text": "El vehículo señalado con un círculo rojo, ¿circula correctamente?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, porque en esta vía las luces deben estar encendidas.",
+            "B. Sí, ya que mantiene una distancia prudencial respecto del resto de los vehículos.",
+            "C. No, dado que está circulando por la banquina.\n"
+        ],
+        "image": "via3.jpg"
+    },
+    {
+        "text": "Un vehículo podrá circular por la franja paralela a la calzada, indicada en la imagen, sólo\ncuando el flujo vehicular esté absolutamente congestionado.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ],
+        "image": "via4.jpg"
+    },
+    {
+        "text": "El vehículo señalizado tiene permitido girar a la izquierda en este cruce que no tiene\nsemáforo.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ],
+        "image": "wtf.jpg"
+    },
+    {
+        "text": "El vehículo con un círculo de color rojo quería girar a la derecha y, por error continuó en\nlínea recta, de modo que:",
+        "correctIndex": 2,
+        "options": [
+            "A. Puede circular marcha atrás, porque es un tramo corto el que tiene que recorrer, y\nefectuar el giro.",
+            "B. Puede dar la vuelta en U para tomar el sentido contrario y así efectuar el giro programado.",
+            "C. Ambas respuestas, A y B, son incorrectas.\n"
+        ],
+        "image": "oops.jpg"
+    },
+    {
+        "text": "Según las normas generales, ¿cuál es la velocidad mínima permitida en esta calle?",
+        "correctIndex": 2,
+        "options": [
+            "A. 30 km/h.",
+            "B. 40 km/h.",
+            "C. 20 km/h.\n"
+        ],
+        "image": "calle2.jpg"
+    },
+    {
+        "text": "Según las normas generales, ¿cuál es la velocidad máxima permitida para un automóvil\nparticular en esta avenida?",
+        "correctIndex": 2,
+        "options": [
+            "A. 40 km/h.",
+            "B. 70 km/h.",
+            "C. 60 km/h.\n"
+        ],
+        "image": "av.jpg"
+    },
+    {
+        "text": "¿Cuál es la velocidad máxima permitida para un automóvil particular en este tramo de la\navenida?",
+        "correctIndex": 2,
+        "options": [
+            "A. 60 km/h.",
+            "B. 50 km/h.",
+            "C. 40 km/h.\n"
+        ],
+        "image": "av2.jpg"
+    },
+    {
+        "text": "Al circular por una ruta a la velocidad máxima permitida sólo se está habilitado a superarla\nen el momento del sobrepaso.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿Cuál es la velocidad máxima permitida en este tramo de calle?",
+        "correctIndex": 1,
+        "options": [
+            "A. 40 km/h.",
+            "B. 20 km/h.",
+            "C. 30 km/h.\n"
+        ],
+        "image": "slow.jpg"
+    },
+    {
+        "text": "Al pretender abandonar una autopista o semiautopista, ¿cuándo se debe reducir la\nvelocidad?",
+        "correctIndex": 1,
+        "options": [
+            "A. Poco antes de abandonar la misma.",
+            "B. Cuando se haya entrado en el carril de desaceleración.",
+            "C. Cuando se ingresa a la nueva vía de circulación.\n"
+        ]
+    },
+    {
+        "text": "Según la Ley Nacional N º 24.449, en carácter general, ¿cuál es la velocidad mínima\npermitida en las semiautopistas?",
+        "correctIndex": 0,
+        "options": [
+            "A. 40 km/h.",
+            "B. 50 km/h.",
+            "C. 60 km/h.\n"
+        ]
+    },
+    {
+        "text": "¿Qué se conoce como velocidad precautoria?",
+        "correctIndex": 0,
+        "options": [
+            "A. A la velocidad adecuada a las circunstancias (dentro de los límites establecidos) que\npermite mantener el total dominio del vehículo sin generar riesgo.",
+            "B. La circulación a la velocidad mínima establecida para una vía.",
+            "C. La circulación a no más de 30 km/h en calles y de 45 km/h en avenidas.\n"
+        ]
+    },
+    {
+        "text": "Los vehículos que circulan por la siguiente avenida, al llegar a esta bocacalle sin semáforos,\n¿cuál es el límite superior de velocidad precautoria que deben respetar?",
+        "correctIndex": 1,
+        "options": [
+            "A. 20 kilómetros por hora.",
+            "B. 40 kilómetros por hora.",
+            "C. 30 kilómetros por hora.\n"
+        ],
+        "image": "slow3.jpg"
+    },
+    {
+        "text": "¿A qué se denomina “distancia de seguridad”?",
+        "correctIndex": 0,
+        "options": [
+            "A. A la distancia mínima que se debe mantener con el vehículo que circula adelante para\ntener un mayor margen de reacción y en caso de frenada repentina no se colisione con\nél.",
+            "B. A la distancia que se debe mantener con el vehículo que circula en el carril paralelo, para\nrealizar un sobrepaso seguro.",
+            "C. A la distancia que recorre el vehículo desde que el conductor percibe una situación de\npeligro hasta que acciona el freno.\n"
+        ]
+    },
+    {
+        "text": "¿Cuál es la “distancia mínima de seguridad” a la que debe circular el vehículo A con\nrespecto al B?",
+        "correctIndex": 0,
+        "options": [
+            "A. A una diferencia de dos segundos.",
+            "B. A una distancia de 2 metros.",
+            "C. No existe una determinada. Sólo está prohibido circular inmediatamente detrás, sin\ndejar distancia.\n"
+        ],
+        "image": "slow4.jpg"
+    },
+    {
+        "text": "¿A qué se denomina “tiempo de reacción”?",
+        "correctIndex": 2,
+        "options": [
+            "A. Al tiempo que pasa desde que se empieza una maniobra hasta que se termina.",
+            "B. Al tiempo que pasa desde que se enciende el vehículo hasta que se empieza a circular.",
+            "C. Al tiempo que pasa desde que se advierte una situación de riesgo hasta que se toma una\ndecisión.\n"
+        ]
+    },
+    {
+        "text": "¿A qué se denomina “distancia de reacción”?",
+        "correctIndex": 2,
+        "options": [
+            "A. A la distancia que recorre un vehículo hasta su detención.",
+            "B. A la distancia que debe guardar un vehículo, respecto de otro, para poder maniobrar.",
+            "C. A la distancia que recorre un vehículo desde que el conductor percibe un peligro hasta\nque toma una decisión.\n"
+        ]
+    },
+    {
+        "text": "Circular por debajo del límite mínimo de velocidad puede causar incidentes.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿Qué relación existe entre la velocidad y el campo visual del conductor?",
+        "correctIndex": 0,
+        "options": [
+            "A. A mayor velocidad, menor campo visual.",
+            "B. A menor velocidad, menor campo visual.",
+            "C. A mayor velocidad, mayor campo visual.\n"
+        ]
+    },
+    {
+        "text": "Los excesos de velocidad...",
+        "correctIndex": 2,
+        "options": [
+            "A. En la actualidad apenas tienen incidencia en los incidentes, debido a la seguridad de los\nvehículos.",
+            "B. Son responsables de la mayoría de los incidentes solamente en vías de doble sentido.",
+            "C. Son responsables de la mayoría de los incidentes fatales cualquiera sea la vía de\ncirculación.\n"
+        ]
+    },
+    {
+        "text": "Circular a velocidad constante y dentro de los límites establecidos por la Ley, además de\nminimizar las posibilidades de provocar un siniestro vial, puede optimizar el consumo de\ncombustible en un vehículo.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "Circular a mayor velocidad de la precautoria implica que aumenten las posibilidades de\nque un siniestro vial sea más grave.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿Cuál es la manera más adecuada de conducir un vehículo en este tramo de la ruta?",
+        "correctIndex": 1,
+        "options": [
+            "A. Aumentar la velocidad gradualmente antes de ingresar en la curva.",
+            "B. Desacelerar antes de ingresar a la curva.",
+            "C. Mantener la misma velocidad antes de la curva y acelerar mientras se circula en ella.\n"
+        ],
+        "image": "via5.jpg"
+    },
+    {
+        "text": "Si al circular por ruta, el vehículo sale involuntariamente de la calzada, es recomendable:",
+        "correctIndex": 1,
+        "options": [
+            "A. Usar el freno de mano.",
+            "B. Desacelerar (no frenar).",
+            "C. Accionar fuertemente el pedal de freno.\n"
+        ]
+    },
+    {
+        "text": "Si ve esta señal mientras conduce, usted debe…",
+        "correctIndex": 0,
+        "options": [
+            "A. Reducir la velocidad del vehículo",
+            "B. Incrementar la velocidad del vehículo",
+            "C. Dar vuelta a la izquierda y después a la derecha\n"
+        ],
+        "image": "sign45.jpg"
+    },
+    {
+        "text": "Si al circular en ruta se encuentra con esta señal, ¿qué conducta debe seguir?",
+        "correctIndex": 0,
+        "options": [
+            "A. Se debe disminuir la velocidad y prestar atención a la posible aproximación de trenes.",
+            "B. Se continúa con la misma velocidad, salvo que se haga efectiva la aproximación del tren.",
+            "C. Se indica al resto de los conductores, la precaución sobre la aproximación de trenes,\ncolocando balizas.\n"
+        ],
+        "image": "sign46.jpg"
+    },
+    {
+        "text": "¿El vehículo de la imagen se encuentra en infracción?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, salvo que el propietario del vehículo sea el mismo que el de la vivienda.",
+            "B. No, ya que hay espacio suficiente para el paso del peatón.",
+            "C. Ambas respuestas, A y B, son incorrectas.\n"
+        ],
+        "image": "obstaculo.jpg"
+    },
+    {
+        "text": "El vehículo con la oblea universal de discapacidad que se muestra en esta imagen, ¿se\nencuentra en infracción?",
+        "correctIndex": 1,
+        "options": [
+            "A. No, ya que al portar la oblea universal de discapacidad tiene libre estacionamiento y por\nello puede estacionar en este lugar.",
+            "B. Sí. Todo vehículo tiene prohibido estacionar en este sector ya que pone en riesgo a\npasajeros y peatones.\n"
+        ],
+        "image": "parked.jpg"
+    },
+    {
+        "text": "¿Es correcta la detención del vehículo en este sector?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, ya que se encuentra con balizas encendidas.",
+            "B. Sí, porque sólo está prohibido el estacionamiento.",
+            "C. No, ya que tanto la detención como el estacionamiento en este sector se encuentra\nprohibido.\n"
+        ],
+        "image": "parked2.jpg"
+    },
+    {
+        "text": "¿Qué línea debe tomarse de referencia cuando se detiene o estaciona en proximidad de\nuna esquina?",
+        "correctIndex": 1,
+        "options": [
+            "A. La línea peatonal.",
+            "B. La línea imaginaria de prolongación de ochava.",
+            "C. La línea de edificación transversal.\n"
+        ]
+    },
+    {
+        "text": "Como norma general, frente a esta señal, ¿está permitido detenerse para el ascenso o\ndescenso de pasajeros?",
+        "correctIndex": 1,
+        "options": [
+            "A. No. Está prohibido estacionar y detenerse.",
+            "B. Sí. Sólo está prohibido estacionar pero no detenerse.",
+            "C. Según la hora en que quiera realizarse la detención.\n"
+        ],
+        "image": "e.jpg"
+    },
+    {
+        "text": "Encender las balizas permite detenerse en doble fila por un lapso de tiempo, entre 2 y 5\nminutos",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿Está permitida la acción que se presenta en la siguiente imagen?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, porque tiene las balizas encendidas y no necesita permanecer más de 5 minutos para \nque descienda un pasajero.",
+            "B. Sí, porque la doble fila está permitida cuando se trata de ascenso y descenso de\npasajeros.",
+            "C. No, ya que la doble fila está permitida sólo como detención previa a la maniobra de\nestacionamiento.\n"
+        ],
+        "image": "lazy.jpg"
+    },
+    {
+        "text": "¿Este vehículo se encuentra bien estacionado?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí. Al no estar el cordón pintado de amarillo, está habilitado a estacionarse y detenerse.",
+            "B. Sí. Al no estar el cordón pintado de rojo, está habilitado a estacionarse pero no a\ndetenerse.",
+            "C. No, porque debería estar más alejado del cordón (a 20 cm de él).\n"
+        ],
+        "image": "parked3.jpg"
+    },
+    {
+        "text": "¿Qué precauciones se deben tener al dejar estacionado un vehículo en esta situación?",
+        "correctIndex": 1,
+        "options": [
+            "A. Orientar las ruedas hacia el cordón de la vereda y dejar la marcha hacia atrás o en\nposición de estacionamiento en el caso de tener caja automática.",
+            "B. Orientar las ruedas hacia el centro de la calzada y dejar la marcha en primera o en\nposición de estacionamiento en el caso de tener caja automática.",
+            "C. Orientar las ruedas paralelas al cordón y sin cambio o en posición de estacionamiento\nen el caso de tener caja automática.\n"
+        ],
+        "image": "parked4.jpg"
+    },
+    {
+        "text": "¿Qué precauciones se deben tener al dejar estacionado un vehículo en esta situación?",
+        "correctIndex": 0,
+        "options": [
+            "A. Orientar las ruedas hacia el cordón de la vereda y dejar la marcha hacia atrás o en\nposición de estacionamiento en el caso de tener caja automática.",
+            "B. Orientar las ruedas hacia el centro de la calzada y dejar la marcha en primera o en posición de estacionamiento en el caso de tener caja automática.",
+            "C. Orientar las ruedas paralelas al cordón y sin cambio o en posición de estacionamiento\nen el caso de tener caja automática.\n"
+        ],
+        "image": "parked5.jpg"
+    },
+    {
+        "text": "¿Está permitido circular marcha atrás en Provincia de Buenos Aires?",
+        "correctIndex": 0,
+        "options": [
+            "A. No, salvo que se realice para estacionar, entrar o salir de un garaje (cuando no exista\notra posibilidad) o salvar algún obstáculo.",
+            "B. Sí, se puede realizar en cualquier ocasión pero el trayecto para circular debe ser de\npocos metros. C. Sí, siempre que se realice antes de llegar a la mitad de la cuadra y\nasegurándose de no poner en riesgo al resto de los vehículos\n"
+        ]
+    },
+    {
+        "text": "Cuando un conductor realiza marcha atrás, ¿qué distancia puede recorrer?",
+        "correctIndex": 2,
+        "options": [
+            "A. No debe superar la mitad de una cuadra.",
+            "B. No más de 20 metros.",
+            "C. El recorrido mínimo e indispensable, siempre que se trate de una maniobra de\nestacionamiento.\n"
+        ]
+    },
+    {
+        "text": "Si el vehículo que lo precede, circula con estas luces intermitentes encendidas, ¿qué podría\nestar indicando el conductor?",
+        "correctIndex": 1,
+        "options": [
+            "A. Que el vehículo circula lentamente.",
+            "B. Que el vehículo próximamente ingresará a un garage o se detendrá.",
+            "C. Que el vehículo realizará un giro en la próxima intersección.\n"
+        ],
+        "image": "abouttopark.jpg"
+    },
+    {
+        "text": "¿Qué indica el uso de este tipo de luces?",
+        "correctIndex": 2,
+        "options": [
+            "A. Cuando se utilizan por separado sirven para preanunciar maniobras.",
+            "B. Cuando se utilizan a la vez sirven para anunciar situaciones de emergencias o que se\nestá por detener.",
+            "C. Ambas respuestas, la A y la B, son correctas.\n"
+        ],
+        "image": "abouttopark.jpg"
+    },
+    {
+        "text": "Si el vehículo de la imagen se dispone a ingresar a un garaje, está anticipando su maniobra,\nutilizando las luces correctas.",
+        "correctIndex": 0,
+        "options": [
+            "Sí",
+            "No\n"
+        ],
+        "image": "abouttopark.jpg"
+    },
+    {
+        "text": "El ingreso hacia un garaje o estacionamiento, ¿cómo debe ser indicado por el conductor?",
+        "correctIndex": 2,
+        "options": [
+            "A. Con la luz de giro hacia el lado donde se irá a ingresar.",
+            "B. Con la luz de giro hacia el lado opuesto donde se irá a ingresar.",
+            "C. Con las luces intermitentes (balizas).\n"
+        ]
+    },
+    {
+        "text": "¿Son válidas este tipo de señas?",
+        "correctIndex": 0,
+        "options": [
+            "A. Como acompañamiento al uso de balizas y/o en caso de emergencia.",
+            "B. Nunca.",
+            "C. Sólo cuando se utilicen en calles.\n"
+        ],
+        "image": "handsign.jpg"
+    },
+    {
+        "text": "Si usted está conduciendo y va a girar al llegar a una intersección, debe anticipar su\nmaniobra utilizando la luz de giro correspondiente por lo menos...",
+        "correctIndex": 2,
+        "options": [
+            "A. 20 metros antes de realizar la maniobra.",
+            "B. 10 metros antes de realizar la maniobra.",
+            "C. 30 metros antes de realizar la maniobra.\n"
+        ]
+    },
+    {
+        "text": "Para realizar correctamente un giro en una intersección se debe indicar...",
+        "correctIndex": 1,
+        "options": [
+            "A. Tocando bocina.",
+            "B. Utilizando la luz de giro del lado correspondiente, al menos 30 metros antes.",
+            "C. Utilizando ambos giros, metros antes de llegar a la intersección.\n"
+        ]
+    },
+    {
+        "text": "Circular con la luz alta encendida está prohibido en zonas urbanas.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "El vehículo, señalado con un círculo rojo, circula utilizando las luces correctas",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ],
+        "image": "dark.jpg"
+    },
+    {
+        "text": "Al observar las luces de este vehículo, ¿qué significado tienen en cuanto al sentido de\ncirculación?",
+        "correctIndex": 0,
+        "options": [
+            "A. Que está circulando en mí mismo sentido.",
+            "B. Que está circulando en el sentido contrario al mío.",
+            "C. No indican sentido de circulación sino que está descompuesto.\n"
+        ],
+        "image": "sentido.jpg"
+    },
+    {
+        "text": "¿Para qué sirven estas luces intermitentes?",
+        "correctIndex": 1,
+        "options": [
+            "A. Para advertir a los demás conductores, frente a malas condiciones climáticas, que el\nvehículo circula a baja velocidad.",
+            "B. Para señalizar y advertir a los demás conductores que el vehículo se encuentra detenido\no próximo a una maniobra de detención, estacionamiento o emergencia.",
+            "C. Ambas respuestas, A y B, son correctas.\n"
+        ],
+        "image": "abouttopark.jpg"
+    },
+    {
+        "text": "Si al circular por la siguiente arteria, se ve obligado a detener en la banquina, ¿qué luces\ndebe colocar?",
+        "correctIndex": 1,
+        "options": [
+            "A. Luces altas y giro.",
+            "B. Luces reglamentarias y balizas.",
+            "C. Luces antinieblas\n"
+        ],
+        "image": "detener.jpg"
+    },
+    {
+        "text": "¿está permitido colocar a un automóvil particular luces adicionales?",
+        "correctIndex": 0,
+        "options": [
+            "A. Está permitido el agregado de dos faros rompeniebla y de hasta dos faros elevados con\nluces de freno.",
+            "B. Sí. Se puede agregar las luces que se deseen ya que cuanto más capacidad de iluminación\ntenga el vehículo, mejor visibilidad tendrá el conductor.",
+            "C. No, está prohibido agregar cualquier tipo de luz adicional. Sólo se podrá reponer las que\ntraiga de fábrica, en caso de destrucción.\n"
+        ]
+    },
+    {
+        "text": "El sistema de luces que posee un vehículo, además de iluminar, brinda información que\npermite la comunicación entre vehículos y también peatones.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿A qué se denomina “aquaplaning”?",
+        "correctIndex": 1,
+        "options": [
+            "A. Cuando la cantidad de agua caída en una lluvia es abundante.",
+            "B. A la pérdida de adherencia del neumático al piso a causa de la capa de agua acumulada\nen el pavimento, que es mayor a la cantidad que se puede expulsar a través de los\ndibujos de los neumáticos.",
+            "C. Al estado resbaladizo en el que se encuentra la calzada luego de una llovizna.\n"
+        ]
+    },
+    {
+        "text": "En cuanto a la velocidad frente a esta situación, ¿qué debería considerar un conductor?",
+        "correctIndex": 1,
+        "options": [
+            "A. Debería circular a la mitad de la velocidad máxima establecida por Ley.",
+            "B. Debería adecuar la velocidad de acuerdo a las condiciones climáticas y de dicha vía de\ncirculación.",
+            "C. Lo único que debería hacer es respetar es la velocidad máxima de la arteria por la que\ncircula.\n"
+        ],
+        "image": "rain.jpg"
+    },
+    {
+        "text": "¿Cómo se define el efecto que ocurre en la siguiente imagen?",
+        "correctIndex": 0,
+        "options": [
+            "Aquaplaning.",
+            "Off tracking.\n"
+        ],
+        "image": "rain.jpg"
+    },
+    {
+        "text": "Cuando hay agua en el camino, debe reducir su velocidad para evitar…",
+        "correctIndex": 2,
+        "options": [
+            "A. Desgastar las llantas.",
+            "B. Sobrecalentar las llantas.",
+            "C. El aquaplaning.\n"
+        ]
+    },
+    {
+        "text": "Si la calzada está mojada y hay charcos, ¿pueden perder eficacia los frenos?",
+        "correctIndex": 1,
+        "options": [
+            "A. No, al contrario, se mejora la adherencia porque los neumáticos se limpian.",
+            "B. Sí, porque al mojarse pueden no funcionar eficazmente.",
+            "C. No, porque justamente los frenos sirven para contrarrestar los efectos de la calzada\nresbaladiza.\n"
+        ]
+    },
+    {
+        "text": "Frente a esta condición climática, ¿se deben encender las luces bajas?",
+        "correctIndex": 0,
+        "options": [
+            "A. Sí, siempre que está disminuida la visibilidad.",
+            "B. No, porque las luces sólo deben utilizarse por la noche.",
+            "C. Sí, pero sólo en rutas.\n"
+        ],
+        "image": "fog.jpg"
+    },
+    {
+        "text": "Al conducir por un largo lapso de tiempo y en esta condición climática…",
+        "correctIndex": 1,
+        "options": [
+            "A. Es menos probable que aparezca la fatiga, ya que aumenta la atención.",
+            "B. Es necesario descansar con más frecuencia, para evitar la fatiga.",
+            "C. No influye en la aparición de fatiga, siempre y cuando se mantenga una velocidad prudente.\n"
+        ],
+        "image": "fog.jpg"
+    },
+    {
+        "text": "Bajo esta condición climática, ¿es recomendable aumentar la distancia de seguridad y\nreducir la velocidad?",
+        "correctIndex": 1,
+        "options": [
+            "A. No, al reducir la velocidad, mayor es la proporción de agua en el asfalto.",
+            "B. Sí, con lluvia la adherencia es menor.",
+            "C. No. La distancia de seguridad debe ser siempre la misma\n"
+        ],
+        "image": "fog.jpg"
+    },
+    {
+        "text": "Conducir de noche aumenta el riesgo de sufrir un incidente.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "Cuando conduce bajo esta condición climática, ¿a cuánto se debe incrementar la regla de 2\nsegundos en la distancia de seguridad?",
+        "correctIndex": 0,
+        "options": [
+            "A. A 4 segundos.",
+            "B. A 3 segundos.",
+            "C. A 5 segundos.\n"
+        ],
+        "image": "rain2.jpg"
+    },
+    {
+        "text": "Al conducir sobre una calzada en estas condiciones, la distancia de frenado será...",
+        "correctIndex": 2,
+        "options": [
+            "A. Igual que cuando la calzada se encuentra seca.",
+            "B. Menor que cuando la calzada se encuentra seca.",
+            "C. Mayor que cuando la calzada se encuentra seca.\n"
+        ],
+        "image": "rain2.jpg"
+    },
+    {
+        "text": "En estas condiciones, ¿una incorrecta regulación de la altura de las luces bajas puede\nproducir encandilamiento?",
+        "correctIndex": 0,
+        "options": [
+            "A. Sí, porque este efecto se produce por cambios bruscos en la intensidad de la luz.",
+            "B. No, porque este efecto se produce sólo por el uso de la luz alta.",
+            "C. No, porque este efecto se produce en rutas con poca iluminación.\n"
+        ],
+        "image": "dark2.jpg"
+    },
+    {
+        "text": "¿Cuál es el límite de velocidad máxima en esta situación",
+        "correctIndex": 0,
+        "options": [
+            "A. 60 km/h.",
+            "B. 80 km/h.",
+            "C. 40 km/h.\n"
+        ],
+        "image": "fog2.jpg"
+    },
+    {
+        "text": "Ante la siguiente situación, ¿qué es lo que se recomienda hacer?",
+        "correctIndex": 1,
+        "options": [
+            "A. Utilizar las luces rompeniebla, lo cual es suficiente porque permite ampliar la visibilidad\ndel conductor.",
+            "B. Conducir con ambas manos en el volante, reducir la velocidad, aumentar la distancia\nentre vehículos y utilizar las luces correspondientes del vehículo.",
+            "C. Detenerse en la banquina hasta que levante el banco de niebla.\n\n"
+        ],
+        "image": "fog2.jpg"
+    },
+    {
+        "text": "Con estas condiciones climáticas, ¿qué luces debe utilizar para poder circular en esta ruta?",
+        "correctIndex": 1,
+        "options": [
+            "A. Las luces altas, durante todo el recorrido mientras continúe la niebla.",
+            "B. Las luces bajas y las rompeniebla (en el caso de tenerlas).",
+            "C. Las luces bajas, las rompenieblas (en caso de tenerlas) y las balizas\n\n"
+        ],
+        "image": "fog2.jpg"
+    },
+    {
+        "text": "¿En qué caso deberán utilizarse estas luces?",
+        "correctIndex": 2,
+        "options": [
+            "A. Únicamente de noche y por una vía sin asfaltar.",
+            "B. Sólo por vías sin banquina.",
+            "C. En vías afectadas por niebla, en cualquier horario\n"
+        ],
+        "image": "luces.jpg"
+    },
+    {
+        "text": "Si se encuentra en esta vía bajo estas condiciones climáticas, ¿lo más conveniente es\ndetenerse en la banquina?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, cuando el banco de niebla es muy denso.",
+            "B. Sí, siempre y cuando se coloquen las luces altas para ser más visibles.",
+            "C. No. Si no hay posibilidad de circular, debe alejarse lo más posible de la calzada y de la\nbanquina.\n"
+        ],
+        "image": "fog2.jpg"
+    },
+    {
+        "text": "La niebla, como factor de riesgo, produce modificaciones en…",
+        "correctIndex": 0,
+        "options": [
+            "A. El campo visual del conductor, su percepción del entorno, la capacidad lumínica del\nvehículo y la adherencia de las cubiertas.",
+            "B. El campo visual del conductor y la capacidad lumínica del vehículo.",
+            "C. Sólo afecta la capacidad lumínica del vehículo.\n"
+        ]
+    },
+    {
+        "text": "Se deben utilizar balizas mientras se conduce bajo estas condiciones climáticas.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ],
+        "image": "fog2.jpg"
+    },
+    {
+        "text": "En condiciones de viento fuerte, es recomendable realizar los sobrepasos de un camión\ncon una diferencia de velocidad no demasiado elevada.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "Si ud. circula por la ruta y observa esta situación, debe…",
+        "correctIndex": 2,
+        "options": [
+            "A. Aumentar la velocidad para sobrepasar al animal rápidamente",
+            "B. Usar la bocina para ahuyentar al animal y mantener su velocidad.",
+            "C. Reducir la velocidad y si es necesario detenerse.\n"
+        ],
+        "image": "animales.jpg"
+    },
+    {
+        "text": "¿Es seguro conducir con este tipo de calzado?",
+        "correctIndex": 2,
+        "options": [
+            "A. Es indistinto mientras que no resbalen.",
+            "B. Sólo puede verse afectada la conducción en viajes largos.",
+            "C. No, sólo un calzado sujeto al pie brinda seguridad en la conducción.\n"
+        ],
+        "image": "pie.jpg"
+    },
+    {
+        "text": "Si el conductor de un vehículo circula con las balizas encendidas, toca repetidamente la\nbocina y el acompañante saca el brazo agitando un pañuelo. ¿Qué está indicando?",
+        "correctIndex": 1,
+        "options": [
+            "A. Que el vehículo tiene un desperfecto.",
+            "B. Que se encuentra en emergencia, transportando a una persona en grave estado de salud.",
+            "C. Ambas respuestas, la A y la B, son correctas\n"
+        ]
+    },
+    {
+        "text": "Si al conducir por una autopista advierte que el vehículo presenta una falla grave, pero a\npesar de ella puede seguir circulando; ¿qué se recomienda hacer en estos casos?",
+        "correctIndex": 1,
+        "options": [
+            "A. Seguir circulando por la autopista pero por el carril de desaceleración, destinado a los\nvehículos lentos.",
+            "B. Circular por el carril derecho y en la próxima salida abandonar la autopista para llamar\nal auxilio del vehículo.",
+            "C. Continuar a baja velocidad, manteniéndose en el carril, independientemente de cuál\nfuera.\n"
+        ]
+    },
+    {
+        "text": "En este tipo de vía, ¿está permitido remolcar con su automóvil particular a otro que se\nencuentra descompuesto?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, ya que es riesgoso que quede detenido pero sólo puede hacerse hasta el lugar más\npróximo donde pueda quedar inmovilizado.",
+            "B. Sí, pero sólo si soy titular de una licencia que autoriza a conducir vehículos con remolque.",
+            "C. No, sólo pueden hacerlo los vehículos autorizados a tal fin.\n"
+        ],
+        "image": "via6.jpg"
+    },
+    {
+        "text": "¿A qué se denomina conducción preventiva?",
+        "correctIndex": 1,
+        "options": [
+            "A. A controlar el buen funcionamiento del vehículo, los niveles de combustible, aceite e\ninflado de neumáticos.",
+            "B. A adoptar conductas cautelosas al conducir, que consideran la responsabilidad por los\nactos que se llevan a cabo y a anticipar la conducta de los demás.",
+            "C. A realizar cursos viales cada seis meses.\n"
+        ]
+    },
+    {
+        "text": "Una conducción preventiva o anticipada prevé que todos podemos cometer errores, a pesar\nde conocer la normativa y la concientización gubernamental.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿A qué se denomina conducción eficiente?",
+        "correctIndex": 0,
+        "options": [
+            "A. A una conducción que disminuya los riesgos de seguridad vial y logre un menor consumo\nde combustible.",
+            "B. A una conducción que logre llegar a destino en el menor tiempo posible.",
+            "C. A una conducción que mantenga durante todo el trayecto la misma velocidad.\n"
+        ]
+    },
+    {
+        "text": "Si los espejos retrovisores de su vehículo están bien orientados, igualmente es posible que\nse produzcan puntos ciegos cuando observe por los mismos",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿Cómo se pueden reducir los puntos ciegos al conducir un vehículo?",
+        "correctIndex": 2,
+        "options": [
+            "A. Acomodar correctamente los espejos retrovisores antes de iniciar la marcha. Mientras\nse circula, además de revisar los espejos retrovisores, utilizar la visión periférica dando\nvistazos por encima de los hombros cuando sea necesario.",
+            "B. Antes de realizar una maniobra se debe disminuir la velocidad de circulación, colocar\nla luz de giro y mirar por los espejos realizando un pequeño movimiento corporal hacia\nadelante para ampliar el ángulo de visión.",
+            "C. Ambas respuestas, A y B, son correctas.\n"
+        ]
+    },
+    {
+        "text": "¿A qué se llama “Punto Ciego”?",
+        "correctIndex": 0,
+        "options": [
+            "A. Al área de visión del entorno, a la que el conductor no tiene acceso ya sea de manera\ndirecta o porque los espejos retrovisores no la reflejan.",
+            "B. Sólo al área de visión que no es cubierta por los espejos retrovisores.",
+            "C. Al punto imaginario ubicado en el horizonte de una ruta.\n"
+        ]
+    },
+    {
+        "text": "Para realizar una conducción segura, ¿cuándo es recomendable verificar la orientación de\nlos espejos retrovisores?",
+        "correctIndex": 0,
+        "options": [
+            "A. Antes de iniciar la marcha.",
+            "B. Durante la conducción, para poder hacer una prueba real.",
+            "C. Con el vehículo inmovilizado y el conductor fuera del mismo.\n"
+        ]
+    },
+    {
+        "text": "Indique cuál de estas imágenes muestra la manera correcta de colocar el espejo retrovisor:",
+        "correctIndex": 0,
+        "options": [
+            "A. Imagen A.",
+            "B. Imagen B.",
+            "C. Ambas respuestas, la A y la B, son correctas.\n"
+        ],
+        "image": "espejo.jpg"
+    },
+    {
+        "text": "Todos los cristales de un vehículo deben garantizar visibilidad...",
+        "correctIndex": 1,
+        "options": [
+            "A. Solamente de adentro del automóvil hacia afuera.",
+            "B. Desde adentro hacia fuera y de afuera hacia adentro del vehículo.",
+            "C. El único cristal que debe garantizar plena y total visibilidad es el parabrisas.\n"
+        ]
+    },
+    {
+        "text": "¿Qué se entiende por habitáculo?",
+        "correctIndex": 0,
+        "options": [
+            "A. Al espacio a ser ocupado por el conductor y los pasajeros.",
+            "B. Al lugar en el cual se transporta el equipaje (Baúl).",
+            "C. Comprende a todo el vehículo en general.\n"
+        ]
+    },
+    {
+        "text": "¿Cómo deben encontrarse los neumáticos para comprobar la correcta presión de aire?",
+        "correctIndex": 0,
+        "options": [
+            "Fríos.",
+            "Calientes.",
+            "Es indistinto, al ser de caucho se mantienen aislados de la temperatura.\n"
+        ]
+    },
+    {
+        "text": "¿Cuál es la correcta presión de los neumáticos de un automóvil particular?",
+        "correctIndex": 1,
+        "options": [
+            "A. 28 lbs.",
+            "B. La que indique el manual del usuario de ese automóvil.",
+            "C. 30 lbs.\n"
+        ]
+    },
+    {
+        "text": "Si al circular se presenta la siguiente situación, ¿cuál es la acción que se recomienda\nrealizar?",
+        "correctIndex": 2,
+        "options": [
+            "A. Frenar inmediatamente.",
+            "B. Desacelerar rápidamente y frenar.",
+            "C. Desacelerar lentamente y sujetar el volante.\n"
+        ],
+        "image": "pop.jpg"
+    },
+    {
+        "text": "Si el sistema de amortiguación delantero de su vehículo se encuentra en mal estado,\n¿puede afectar esta anomalía la conducción?",
+        "correctIndex": 1,
+        "options": [
+            "A. No, porque al ser el sistema de suspensión delantero el deteriorado, éste no influirá en\nla conducción.",
+            "B. Sí, puede afectar al correcto control del vehículo.",
+            "C. No, porque si se encuentra correctamente la suspensión trasera, ésta asegurará el\ncontacto adecuado de las ruedas con la calzada.\n"
+        ]
+    },
+    {
+        "text": "Según la Ley N° 24.449, ¿qué ítem enumera los elementos de seguridad obligatorios que\nse deben llevar en un vehículo?",
+        "correctIndex": 1,
+        "options": [
+            "A. Los elementos A, B y D.",
+            "B. Los elementos B, C y D.",
+            "C. Los elementos A, D y E.\n"
+        ],
+        "image": "items.jpg"
+    },
+    {
+        "text": "El siguiente elemento de seguridad, está correctamente ubicado.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ],
+        "image": "matafuegos.jpg"
+    },
+    {
+        "text": "El siguiente elemento de seguridad, está correctamente ubicado",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ],
+        "image": "matafuegos2.jpg"
+    },
+    {
+        "text": "¿En qué ocasiones se permite el uso de la bocina?",
+        "correctIndex": 0,
+        "options": [
+            "A. Sólo para advertir una situación potencialmente de peligro.",
+            "B. Sólo para advertir de un sobrepaso.",
+            "C. Ambas respuestas, la A y la B, son incorrectas.\n"
+        ]
+    },
+    {
+        "text": "Los objetos sueltos como lentes, celular, llaves o similares resultan muy peligrosos en caso\nde incidentes o maniobras bruscas, porque pueden ocasionar una lesión grave producto de\nla energía cinética que poseen.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "Al transportar cualquier elemento, éste debe ubicarse de modo que no perturbe la\nvisibilidad, afecte peligrosamente las condiciones aerodinámicas del vehículo, oculte luces\no sobresalga de los límites permitidos.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ]
+    },
+    {
+        "text": "¿En qué parte del vehículo es conveniente poner el equipaje?",
+        "correctIndex": 0,
+        "options": [
+            "A. Lo más pesado en el fondo del baúl, cerca del centro del auto. Eso ayuda a la estabilidad\ndireccional y al comportamiento en las curvas.",
+            "B. Lo más pesado en el techo del vehículo, sujeto con sogas. Eso ayuda al centro de gravedad.",
+            "C. Lo más pesado en los asientos traseros (si es que se viaja sin ocupantes en esa zona).\nEso ayuda a la estabilidad direccional.\n"
+        ]
+    },
+    {
+        "text": "¿Quién es el responsable frente a la autoridad de control, si uno de los pasajeros del\nautomóvil no lleva puesto el cinturón de seguridad?",
+        "correctIndex": 2,
+        "options": [
+            "A. El tomador del seguro.",
+            "B. El pasajero, si es mayor de edad.",
+            "C. El conductor.\n"
+        ]
+    },
+    {
+        "text": "Este elemento de seguridad pasiva sirve para reducir el daño producido a los ocupantes de\nun vehículo al momento de un siniestro.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero.",
+            "Falso.\n"
+        ],
+        "image": "air.jpg"
+    },
+    {
+        "text": "Este elemento de seguridad...",
+        "correctIndex": 1,
+        "options": [
+            "A. Permite prescindir del uso del cinturón de seguridad.",
+            "B. Complementa el uso del cinturón de seguridad.",
+            "C. Es incompatible con el uso del cinturón de seguridad.\n"
+        ],
+        "image": "air.jpg"
+    },
+    {
+        "text": "Durante un siniestro, si el conductor del vehículo no lleva puesto el cinturón de seguridad,\nel airbag...",
+        "correctIndex": 2,
+        "options": [
+            "A. Le salvará la vida ya que puede sustituir al cinturón de seguridad.",
+            "B. Evitará que sufra lesiones, siempre y cuando el siniestro se produzca a menos de 80\nkm/h.",
+            "C. Puede provocar lesiones graves.\n"
+        ]
+    },
+    {
+        "text": "¿Es correcta la colocación del dispositivo de retención infantil en este vehículo?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, salvo en rutas nacionales.",
+            "B. Sí, siempre y cuando esté debidamente ajustado.",
+            "C. No, ya que estos dispositivos deben ir colocados en los asientos traseros.\n"
+        ],
+        "image": "baby.jpg"
+    },
+    {
+        "text": "En la siguiente imagen, ¿es correcta la colocación del dispositivo de retención infantil para\nun niño de 7 años?",
+        "correctIndex": 1,
+        "options": [
+            "A. Sí, ya que se encuentra bien ajustado y en el asiento trasero.",
+            "B. No, ya que la orientación “a contra marcha” de los SRI es sólo para los grupos 0 y 0+ y 1\nde SRI según indique su fabricante y este niño supera la edad para esos grupos.",
+            "C. Sí, ya que la orientación “a contra marcha” reduce el efecto “latigazo” en caso de un\nsiniestro.\n"
+        ],
+        "image": "nene.jpg"
+    },
+    {
+        "text": "¿Es correcta la manera en que utiliza el Sistema de Retención Infantil (SRI) esta niña?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, ya que se encuentra sentada en un SRI, en el asiento trasero.",
+            "B. No, ya que la niña debería ubicarse “a contra marcha” para reducir el efecto “latigazo”.",
+            "C. No, ya que la niña no utiliza el cinturón de seguridad del SRI.\n"
+        ],
+        "image": "nena.jpg"
+    },
+    {
+        "text": "El apoyacabeza está correctamente ubicado en función del conductor.",
+        "correctIndex": 0,
+        "options": [
+            "Sí",
+            "No\n"
+        ],
+        "image": "head.jpg"
+    },
+    {
+        "text": "¿Es obligatoria la utilización de este elemento en todos los asientos del automóvil?",
+        "correctIndex": 0,
+        "options": [
+            "A. Sí. Lo establece la normativa para evitar lesiones graves en la zona cervical.",
+            "B. No en todos, para los asientos traseros no cumplen ninguna función.",
+            "C. No, ya que no forma parte de la seguridad activa ni pasiva de los vehículos\n"
+        ],
+        "image": "headseat.jpg"
+    },
+    {
+        "text": "Frente a un siniestro, ¿qué puede evitar este elemento si está correctamente ubicado?",
+        "correctIndex": 1,
+        "options": [
+            "A. Nada en especial, dado que sólo es un elemento de confort.",
+            "B. Lesiones en la zona cervical.",
+            "C. Lesiones en el tórax.\n"
+        ],
+        "image": "headseat.jpg"
+    },
+    {
+        "text": "¿Todos los ocupantes del vehículo viajan de manera correcta?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, ya que la obligación del uso del cinturón de seguridad alcanza sólo al conductor",
+            "B. Sí, ya que la obligación del uso del cinturón de seguridad alcanza sólo a las personas que\nse trasladen en los asientos delanteros.",
+            "C. No, porque la obligación del uso del cinturón de seguridad es para todas las personas\ntransportadas.\n"
+        ],
+        "image": "people.jpg"
+    },
+    {
+        "text": "Luego de un largo viaje en ruta, realizó una parada y le faltan muy pocos kilómetros para\nllegar a destino, ¿es necesario que todos los ocupantes vuelvan a ponerse el cinturón de\nseguridad?",
+        "correctIndex": 2,
+        "options": [
+            "A. No, sólo es obligatorio para los que se ubiquen en los asientos delanteros.",
+            "B. No, porque se está por llegar a destino.",
+            "C. Sí, porque su uso es obligatorio para todos los ocupantes.\n"
+        ]
+    },
+    {
+        "text": "¿Cuál de estas imágenes muestra el uso adecuado del cinturón de seguridad durante el\nembarazo?",
+        "correctIndex": 1,
+        "options": [
+            "A. Imagen A.",
+            "B. Imagen B.\n"
+        ],
+        "image": "embarazada.jpg"
+    },
+    {
+        "text": "¿Esta persona tiene el cinturón correctamente colocado?",
+        "correctIndex": 0,
+        "options": [
+            "A. No, porque pasa por el abdomen y debería hacerlo por los huesos de la cadera.",
+            "B. No, porque pasa por el abdomen y debería hacerlo por los muslos.",
+            "C. Sí, porque pasa por la clavícula y el abdomen.\n"
+        ],
+        "image": "cinto.jpg"
+    },
+    {
+        "text": "Los ocupantes de este vehículo ¿viajan de manera segura?",
+        "correctIndex": 2,
+        "options": [
+            "A. Sí, ya que las personas se encuentran con cinturón de seguridad.",
+            "B. No, ya que por normativa no está permitido trasladar mascotas en un automóvil particular.",
+            "C. No, ya que las mascotas deben ser transportadas en los asientos traseros sujetos con\narnés o sistema de retención correspondiente.\n"
+        ],
+        "image": "perro.jpg"
+    },
+    {
+        "text": "El dispositivo de airbag de un vehículo constituye un elemento de seguridad de tipo Activa",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "La seguridad Activa consiste",
+        "correctIndex": 2,
+        "options": [
+            "a) Reducir al mínimo los daños que se pueden producir cuando acontece un sienestro.",
+            "b) Compone el conjunto de soluciones técnicas y el contenido de los elementos que hacen\ndistendida la vida a bordo del vehículo.",
+            "c) Está orientada a evitar al máximo los siniestros viales y comprende el conjunto de todos\naquellos elementos que contribuyen a propocionar una mayor eficacia en la conducción\ngarantizando respuestas eficaces.\n"
+        ]
+    },
+    {
+        "text": "La seguridad Pasiva consiste",
+        "correctIndex": 1,
+        "options": [
+            "a) Reducir al mínimo los daños que se pueden producir cuando acontece un sienestro.",
+            "b) Compone el conjunto de soluciones técnicas y el contenido de los elementos que hacen\ndistendida la vida a bordo del vehículo.",
+            "c) Está orientada a evitar al máximo los siniestros viales y comprende el conjunto de todos\naquellos elementos que contribuyen a propocionar una mayor eficacia en la conducción\ngarantizando respuestas eficaces.\n"
+        ]
+    },
+    {
+        "text": "Definición de Automóvil: el automotor para el transporte de personas de hasta ocho\nplazas (excluido conductor) con cuatro o más ruedas, y los de tres ruedas que exceda los\nmil quinientos kg de peso;",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Además de ser trasladados en el asiento trasero del vehículo, deberán ubicarse en el\ndispositivo de retención infantil correspondiente:",
+        "correctIndex": 2,
+        "options": [
+            "a) los menores de 2 años",
+            "b) Los menores de 3 años",
+            "c) Los menores de 4 años\n"
+        ]
+    },
+    {
+        "text": "Los faros delanteros deben ser:",
+        "correctIndex": 1,
+        "options": [
+            "a) De luz blanca únicamente",
+            "b) De luz blanca o amarilla indistintamente",
+            "c) De luz amarilla únicamente\n"
+        ]
+    },
+    {
+        "text": "Los faros delanteros:",
+        "correctIndex": 2,
+        "options": [
+            "a) No indican sentido de marcha",
+            "b) Sólo indican el sentido de marcha si son amarillas",
+            "c) Indican el sentido de marcha \n"
+        ]
+    },
+    {
+        "text": "Las luces de posición traseras deben ser:",
+        "correctIndex": 2,
+        "options": [
+            "a) De color blanco",
+            "b) De color blanco o rojo indistintamente",
+            "c) De color rojo \n"
+        ]
+    },
+    {
+        "text": "La luz de retroceso debe ser:",
+        "correctIndex": 1,
+        "options": [
+            "a) De color amarillo",
+            "b) De color blanco",
+            "c) De color rojo\n"
+        ]
+    },
+    {
+        "text": "La profundidad del dibujo del neumático debe tener como mínimo",
+        "correctIndex": 1,
+        "options": [
+            "a) 1,4 ml",
+            "b) 1,6 ml.",
+            "c) 1,8 ml\n"
+        ]
+    },
+    {
+        "text": "Que es el aquaplanning",
+        "correctIndex": 1,
+        "options": [
+            "a) Es una película de agua que se forma entre las cubiertas y el guardabarros del vehíuclo.",
+            "b) Es una película de agua que se forma debajo de las cubiertas.",
+            "c) Es una película de agua que se forma por encima de las cubiertas. \n"
+        ]
+    },
+    {
+        "text": "Las señales de demarcación horizontal longitudinales blancas separan las corrientes\nde tránsito en dirección opuesta. ",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Las señales de demarcación horizontal longitudinales blancas delimitan los carriles\nde ciruclación y tienen carácter permisivo para cambiar de carril. ",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Las señales de demarcación horizontal blancas de trazo intermitente delimitan los\ncarriles de ciruclación y tienen carácter prohibitivo para cambiar de carril. ",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Existen tres (3) tipos de desgastes de los neumáticos. En el centro, en los talones y el\nanormal rápido. ",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "En las vías reguladas por semáforos, los vehículos deben:",
+        "correctIndex": 0,
+        "options": [
+            "a) Con luz roja, detenerse antes de la línea marcada a tal efecto o de la senda peatonal,\nevitando luego cualquier movimiento",
+            "b) Con luz roja, detenerse sobre la línea marcada a tal efecto o de la senda peatonal,\nevitando luego cualquier movimiento.",
+            "c) Con luz roja, detenerse antes de la línea marcada a tal efecto o de la senda peatonal,\nrealizando movimientos hasta que se ponga la luz verde.\n"
+        ]
+    },
+    {
+        "text": "Los amortiguadores tienen como función proporcionar seguridad y confort durante la\nconducción, aportando estabilidad al vehículo. ",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "El uso correcto del apoya cabezas en un vehículo es:",
+        "correctIndex": 2,
+        "options": [
+            "a) Muy abajo, donde la parte saliente quede a la altura del cuello del usuario.",
+            "b) Muy atrás en relación con la posición de la cabeza.",
+            "c) La distancia entre el apoya cabezas y la nunca del usuario no debe ser mayor a 5 cm\n"
+        ]
+    },
+    {
+        "text": "El tiempo apróximado de recuperación por la ingesta de 400 cm3 de bebida alocholica\nes...",
+        "correctIndex": 1,
+        "options": [
+            "a) de 2 a 3 hs.",
+            "b) de 2 a 4 hs.",
+            "c) de 3 a 5 hs. \n"
+        ]
+    },
+    {
+        "text": "Con una cantidad mayor a 1 gr/l de alcohol en sangre detectado en controles de\nalcoholemia se procederá al secuestro del vehículo y se incurrirá en falta grave reteniendo\nla licencia del conductor. ",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "El mal estado de los amortiguadores de un vehículo produce:",
+        "correctIndex": 0,
+        "options": [
+            "a) Una mayor distancia de frenado y estabilidad.",
+            "b) El no desgaste de los neumáticos.",
+            "c) Una mayor inestabilidad de la dirección. \n"
+        ]
+    },
+    {
+        "text": "El cinturón de seguridad en los vehículos:",
+        "correctIndex": 0,
+        "options": [
+            "a) Disminuye los riesgos y consecuencias de los siniestros de tránsito.",
+            "b) Debe usarse sólo cuando se conduce fuera del ámbito urbano (rutas, autopistas, etc.).",
+            "c) Disminuye la posibilidad de incurrir en un siniestro vial. \n"
+        ]
+    },
+    {
+        "text": "¿Cual es la distancia de seguridad que debe dejarse entre vehiculos al circular en\nciudad?",
+        "correctIndex": 2,
+        "options": [
+            "a) 50 mts (3 segundos)",
+            "b) 80 mts (4 segundos)",
+            "c) 30 mts (2 segundos)\n"
+        ]
+    },
+    {
+        "text": "Al momento de producirse un sisniestro vial, se deben colocar los triángulos de\nemergencias a fin de señalizar el sinsiestro a una distancia de",
+        "correctIndex": 0,
+        "options": [
+            "a) 50 mts del vehículo.",
+            "b) 60 mts del vehículo.",
+            "c) 70 mts del vehículo.\n"
+        ]
+    },
+    {
+        "text": "¿Puede un vehículo no destinado a remolque, remolcar a otros?",
+        "correctIndex": 1,
+        "options": [
+            "a) Si.",
+            "b) No, salvo casos de fuerza mayor.",
+            "c) No, en ningún caso.\n"
+        ]
+    },
+    {
+        "text": "La prioridad de paso de un vehículo se pierde:",
+        "correctIndex": 1,
+        "options": [
+            "a) Ante el paso de vehículos de mayor porte.",
+            "b) Ante vehículos del servicio público de urgencia, en cumplimiento de su misión.",
+            "c) Nunca se pierde. \n"
+        ]
+    },
+    {
+        "text": "El titular de una licencia de conducir tiene un plazo de gracia de 60 (sesenta) días para gestionar la renovación de su licencia una vez vencida la misma. En ese lapso de tiempo\nestá en condiciones de renovar pero no de manejar",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Cuando un automóvil es conducido por un camino con nieve o hielo, ¿cuál es la\nmaniobra correcta que se debe realizar?:",
+        "correctIndex": 1,
+        "options": [
+            "a) Conducir el vehículo con el freno de manos activado, sobrepasando a los demás vehículos.",
+            "b) Conducir con regularidad, evitando frenar bruscamente y no sobrepasando a otros\nvehículos.",
+            "c) Conducir a la menor velocidad posible con las balizas encendidas sin sobrepasar a otros. \n"
+        ]
+    },
+    {
+        "text": "¿Cuál es el grado máximo de alcoholemia permitido para conducir un automóvil?:",
+        "correctIndex": 0,
+        "options": [
+            "a) 0,5 gramos por litro de sangre",
+            "b) 0,2 gramos por litro de sangre",
+            "c) 0,05 gramos por litro de sangre\n"
+        ]
+    },
+    {
+        "text": "El uso de enganches sobresalientes:",
+        "correctIndex": 2,
+        "options": [
+            "a) Está permitido en vehículos de carga",
+            "b) Está permitido en zonas de baja densidad de tránsito",
+            "c) Está prohibido \n"
+        ]
+    },
+    {
+        "text": "¿En qué circunstancia está permitido circular sin respetar distancias prudentes con\nel vehículo que va adelante?",
+        "correctIndex": 2,
+        "options": [
+            "a) Transitando vías multicarriles",
+            "b) En toda circunstancia, si no se trata de vehículos de carga",
+            "c) Está prohibido en toda circunstancia"
+        ]
     }
 
 ]
