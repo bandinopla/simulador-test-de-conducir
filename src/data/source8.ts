@@ -2585,57 +2585,697 @@ export const source:Question[] = [
 
     //pag 90
 
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
-    // {
-    //     text:"",
-    //     options:[
-    //         ""
-    //     ],
-    //     correctIndex:0,
-    //     image:undefined
-    // },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Puente angosto",
+            "Estrechamiento (en sus dos manos)",
+            "Estrechamiento (en una sola mano)"
+        ],
+        correctIndex:0,
+        image:"sign12.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Incorporación de tránsito lateral",
+            "Inicio doble mano",
+            "Ascenso y descenso."
+        ],
+        correctIndex:1,
+        image:"sign10.jpg"
+    },
+    {
+        text:"La siguiente señal indica: ",
+        options:[
+            "Paneles de prevención",
+            "Cruce ferroviario",
+            "Curva cerrada"
+        ],
+        correctIndex:0,
+        image:"sign13.jpg"
+    },
+    {
+        text:" La siguiente señal indica:",
+        options:[
+            "camino sinuoso  ",
+            "Camino en ascenso",
+            "Curva en “S”"
+        ],
+        correctIndex:0,
+        image:"sign14.jpg"
+    },
+    {
+        text:" La siguiente señal indica:",
+        options:[
+            "Paso obligatorio",
+            "Giro obligatorio derecha",
+            "Sentido circulación (derecha) "
+        ],
+        correctIndex:2,
+        image:"sign15.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Vientos fuertes laterales",
+            "Derrumbes",
+            "Proyección de piedras"
+        ],
+        correctIndex:2,
+        image:"sign16.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Puente móvil",
+            "Inicio de calzada dividida",
+            "Túnel"
+        ],
+        correctIndex:1,
+        image:"sign17.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "incorporación de tránsito lateral",
+            "encrucijada ",
+            "Doble camino "
+        ],
+        correctIndex:1,
+        image:"sign18.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "Puesto sanitario",
+            "Bomberos",
+            "Policia "
+        ],
+        correctIndex:2,
+        image:"sign19.jpg"
+    },
+    {
+        text:"La siguiente señal indica:",
+        options:[
+            "curva cerrada",
+            "camino sinuoso",
+            " permitido girar a la izquierda"
+        ],
+        correctIndex:2,
+        image:"sign20"
+    }, 
+
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "camino sinuoso ",
+            "curva común",
+            "Curva en “S” \n"
+        ],
+        "image": "sign21.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "No estacionar.",
+            "No estacionar ni detenerse.",
+            "Prohibición de circular autos. \n"
+        ],
+        "image": "sign22.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 0,
+        "options": [
+            "Incorporación de tránsito lateral.",
+            "Inicio doble mano",
+            "encrucijada\n"
+        ],
+        "image": "sign23.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 1,
+        "options": [
+            "Hotel. ",
+            "Campamento. ",
+            "Punto panorámico.\n"
+        ],
+        "image": "sign24.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "Estacionamiento de casas rodantes",
+            "Campamento",
+            "Punto panorámico. \n"
+        ],
+        "image": "sign25.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 0,
+        "options": [
+            "Límite de velocidad mínima",
+            "Límite de velocidad máxima",
+            "Limitación largo vehículo\n"
+        ],
+        "image": "sign26.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 1,
+        "options": [
+            "Límite de velocidad mínima",
+            "Límite de velocidad máxima",
+            "Limitación largo vehículo\n"
+        ],
+        "image": "sign27.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "Límite de velocidad mínima",
+            "Límite de velocidad máxima",
+            "Limitación largo vehículo \n"
+        ],
+        "image": "sign28.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 1,
+        "options": [
+            "Escolares",
+            "Niños",
+            "Zona de deportes\n"
+        ],
+        "image": "sign29.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "Prohibición de circular camión",
+            "Prohibición de circular carro de mano",
+            "Prohibición de circular acoplado \n"
+        ],
+        "image": "sign30.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 1,
+        "options": [
+            "Prohibición de circular camión",
+            "Prohibición de circular carro de mano",
+            "Prohibición de circular acoplado\n"
+        ],
+        "image": "sign31.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 0,
+        "options": [
+            "Prohibición de circular camión",
+            "Prohibición de circular carro de mano",
+            "Prohibición de circular acoplado\n"
+        ],
+        "image": "sign32.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 0,
+        "options": [
+            "Escolares",
+            "Niños",
+            "Hombres trabajando\n"
+        ],
+        "image": "sign33.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "Zona de montaña",
+            "Niños",
+            "Hombres trabajando\n"
+        ],
+        "image": "sign34.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 0,
+        "options": [
+            "Vallas tipo dos",
+            "Desvío",
+            "Delineadores\n"
+        ],
+        "image": "sign35.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 1,
+        "options": [
+            "Vallas",
+            "Tambores",
+            "Delineadores\n"
+        ],
+        "image": "sign36.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "Vallas",
+            "Tambores",
+            "Delineadores\n"
+        ],
+        "image": "sign37.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 0,
+        "options": [
+            "Ruta panamericana",
+            "Ruta nacional",
+            "Ruta provincial\n"
+        ],
+        "image": "sign38.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 1,
+        "options": [
+            "Ruta panamericana",
+            "Ruta nacional",
+            "Ruta provincial\n"
+        ],
+        "image": "sign39.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 2,
+        "options": [
+            "Ruta panamericana",
+            "Ruta nacional",
+            "Ruta provincial\n"
+        ],
+        "image": "sign40.jpg"
+    },
+    {
+        "text": "La siguiente señal indica:",
+        "correctIndex": 1,
+        "options": [
+            "Estación de servicio",
+            "Gomería",
+            "Policía\n"
+        ],
+        "image": "sign41.jpg"
+    },
+    {
+        "text": "La siguiente señal indica",
+        "correctIndex": 0,
+        "options": [
+            "Limitación de altura",
+            "Limitación de ancho",
+            "Limitación de largo de vehículo\n"
+        ],
+        "image": "sign42.jpg"
+    },
+    {
+        "text": "La siguiente señal indica",
+        "correctIndex": 0,
+        "options": [
+            "Limitación de peso",
+            "Limitación de peso por eje",
+            "Limitación de altura\n"
+        ],
+        "image": "sign43.jpg"
+    },
+    {
+        "text": "La siguiente señal indica",
+        "correctIndex": 1,
+        "options": [
+            "Limitación de peso",
+            "Limitación de peso por eje",
+            "Limitación de altura\n"
+        ],
+        "image": "sign44.jpg"
+    },
+    {
+        "text": "Las señales reglamentarias son redondas, blancas y con bordes rojos",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Si nos encontramos ante un cuadrado o rectángulo azul o verde se trata de:",
+        "correctIndex": 2,
+        "options": [
+            "una señal reglamentaria",
+            "una señal preventiva",
+            "una señal de información y orientación\n"
+        ]
+    },
+    {
+        "text": "Las señales redondas, blancas y con bordes rojos son señales de prevención.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Violar o hacer caso omiso a una señal de prevención implica una sanción por parte de\nla autoridad competente.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Violar o hacer caso omiso a una señal de información no conlleva a cometer una\ninfracción.",
+        "correctIndex": 0,
+        "options": [
+            "V",
+            "F\n"
+        ]
+    },
+    {
+        "text": "Las señales reglamentarias son normas de cumplimiento obligatorio",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Las señales informativas nos alertan o advierten una cuestión determinada",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Todas las señales (salvo luces) deben ser retroreflectivas",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "Las señales reglamentarias son cuadradas con diagonal vertical y amarillas",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "En un cruce de dos calles sin semáforo, frente a la siguiente situación, ¿quién tiene prioridad de paso?",
+        "correctIndex": 2,
+        "options": [
+            "El vehículo A, ya que está circulando por la derecha",
+            "Los vehículos B, ya que son varios los que circulan por esa calle.",
+            "El vehículo A, ya que está saliendo del paso a nivel ferroviario.\n"
+        ],
+        "image": "prioridad4.jpg"
+    },
+    {
+        "text": "En un cruce de dos calles sin semáforo, frente a la siguiente situación, ¿quién tiene prioridad\nde paso?",
+        "correctIndex": 1,
+        "options": [
+            "El vehículo A.",
+            "El vehículo B.\n"
+        ],
+        "image": "prioridad5.jpg"
+    },
+    {
+        "text": "¿Quién tiene prioridad de paso en el cruce de estas dos calles?",
+        "correctIndex": 0,
+        "options": [
+            "Los vehículos que circulan por la calle A.",
+            "Los vehículos que circulan por la calle B.\n"
+        ],
+        "image": "prioridad6.jpg"
+    },
+    {
+        "text": "¿Qué vehículo tiene prioridad de paso en esta intersección sin semáforo?",
+        "correctIndex": 0,
+        "options": [
+            "El vehículo A porque circula por una avenida.",
+            "El vehículo B porque circula por la derecha.",
+            "Es indistinto ya que es una esquina sin semáforo.\n"
+        ],
+        "image": "prioridad7.jpg"
+    },
+    {
+        "text": "Al conducir un vehículo y llegar a esta intersección, ¿cómo debe proceder frente a esta\nseñal?",
+        "correctIndex": 1,
+        "options": [
+            "Disminuir un poco la velocidad y mirar que no se acerquen vehículos por la vía a la que\nse va a incorporar.",
+            "Reducir la velocidad y detener el vehículo antes de la senda peatonal.",
+            "Avanzar\n"
+        ],
+        "image": "pare2.jpg"
+    },
+    {
+        "text": "Como conductor de un vehículo, ¿cómo debe proceder frente a esta señal horizontal?",
+        "correctIndex": 1,
+        "options": [
+            "Disminuir un poco la velocidad y mirar que no se acerquen vehículos por la vía a la que\nse va a incorporar.",
+            "Reducir la velocidad y detener el vehículo antes de la senda peatonal.",
+            "Avanzar.\n"
+        ],
+        "image": "pare3.jpg"
+    },
+    {
+        "text": "Estas señales son las únicas que indican que se pierde la prioridad de paso en una\nbocacalle sin semáforo.",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero",
+            "False\n"
+        ],
+        "image": "paso.jpg"
+    },
+    {
+        "text": "Como norma de carácter general, ¿quién tiene prioridad de paso en una encrucijada sin\nsemáforos?",
+        "correctIndex": 2,
+        "options": [
+            "Los vehículos de transporte de pasajero.",
+            "El vehículo de menor tamaño.",
+            "El vehículo que se presenta por el lado derecho.\n\n"
+        ]
+    },
+    {
+        "text": "En la siguiente situación, ¿a quién le corresponde la prioridad de paso?",
+        "correctIndex": 1,
+        "options": [
+            "Al automóvil.",
+            "Al colectivo.",
+            "Es indistinto\n"
+        ],
+        "image": "prioridad8.jpg"
+    },
+    {
+        "text": "Frente a esta situación de obstrucción de vía, ¿qué debe hacer el conductor del vehículo\nseñalado?",
+        "correctIndex": 0,
+        "options": [
+            "Debe ceder el paso al vehículo que circula en el sentido contrario.",
+            "Tiene prioridad de paso sobre el otro vehículo.",
+            "La normativa no establece prioridad de paso ante esta situación.\n"
+        ],
+        "image": "bloqueo.jpg"
+    },
+    {
+        "text": "En la siguiente situación, ¿a quién le corresponde la prioridad de paso?",
+        "correctIndex": 1,
+        "options": [
+            "Al vehículo A, ya que circula por la derecha.",
+            "Al vehículo B, ya que circula por una avenida.",
+            "Es indistinto.\n"
+        ],
+        "image": "paso2.jpg"
+    },
+    {
+        "text": "¿Quién tiene prioridad de paso en una rotonda?",
+        "correctIndex": 2,
+        "options": [
+            "El vehículo que circule por la derecha.",
+            "El vehículo que pretende acceder a la rotonda.",
+            "El vehículo que se encuentra dentro de la calzada circular.\n"
+        ]
+    },
+    {
+        "text": "En esta situación, donde hay una calzada circular, ¿quién tiene la prioridad de paso?",
+        "correctIndex": 1,
+        "options": [
+            "El vehículo A.",
+            "El vehículo B.",
+            "Es indistinto.\n"
+        ],
+        "image": "paso3.jpg"
+    },
+    {
+        "text": "Como norma general, en una arteria de doble circulación, con pendiente pronunciada y\ncon un ancho que no permite la circulación simultánea de dos vehículos, ¿quién tiene la\nprioridad de paso?",
+        "correctIndex": 1,
+        "options": [
+            "El vehículo que desciende.",
+            "El vehículo que asciende.",
+            "No hay prioridad, cualquiera de ellos\n"
+        ]
+    },
+    {
+        "text": "En esta pendiente estrecha, ¿cuál de los dos vehículos tiene prioridad de paso?",
+        "correctIndex": 1,
+        "options": [
+            "El vehículo A.",
+            "El vehículo B.\n"
+        ],
+        "image": "paso4.jpg"
+    },
+    {
+        "text": "¿Cuándo se debe ceder el paso a los vehículos que desean incorporarse al tránsito desde\nel lugar donde estaban estacionados o desde un garaje?",
+        "correctIndex": 1,
+        "options": [
+            "Siempre, independientemente de cómo se encuentre el tránsito vehicular.",
+            "Cuando el tránsito se encuentra interrumpido por cualquier razón.",
+            "Nunca, independientemente de cómo se encuentre el tránsito vehicular.\n"
+        ]
+    },
+    {
+        "text": "El vehículo señalizado quiere incorporarse al tránsito, ¿tiene prioridad de paso sobre los\notros vehículos que están circulando por esta arteria?",
+        "correctIndex": 0,
+        "options": [
+            "No, porque los vehículos de la arteria, a la que se pretende ingresar, están circulando.",
+            "Sí, porque se encuentra a la derecha.",
+            "Sí, porque señalizó su maniobra.\n"
+        ],
+        "image": "paso5.jpg"
+    },
+    {
+        "text": "El vehículo señalizado quiere incorporarse al tránsito, ¿tiene prioridad de paso sobre los\notros vehículos que están detenidos en la arteria?",
+        "correctIndex": 1,
+        "options": [
+            "No. La prioridad es de los otros vehículos, independientemente si están detenidos o\ncirculando.",
+            "Sí, porque se encuentra el tránsito detenido y deben cederle el paso.",
+            "No. La Ley no menciona nada al respecto, sólo se expresa sobre las prioridades en\nintersecciones no semaforizadas.\n"
+        ],
+        "image": "paso6.jpg"
+    },
+    {
+        "text": "En la siguiente situación, ¿el vehículo B puede sobrepasar al vehículo A?",
+        "correctIndex": 1,
+        "options": [
+            "Sí, salvo que se acerque un vehículo en el sentido contrario.",
+            "No, ya que está prohibido por la demarcación horizontal.",
+            "Sí, haciendo las señales de luces correspondientes y si el vehículo que circula en sentido\ncontrario está lejos\n"
+        ],
+        "image": "sobrepaso.jpg"
+    },
+    {
+        "text": "¿Cuáles de los siguientes vehículos NO se encuentran en infracción?",
+        "correctIndex": 2,
+        "options": [
+            "Los vehículos A y B.",
+            "Los vehículos A y C.",
+            "Los vehículos B y C.\n"
+        ],
+        "image": "infraccion.jpg"
+    },
+    {
+        "text": "El vehículo A pretende cambiar de carril hacia su derecha, ¿cuál de los dos vehículos tiene\nprioridad?",
+        "correctIndex": 1,
+        "options": [
+            "El vehículo A.",
+            "El vehículo B.\n"
+        ],
+        "image": "cambio.jpg"
+    },
+    {
+        "text": "En este tipo de arteria, ¿quién tiene prioridad cuando se desea realizar un cambio de\ncarril?",
+        "correctIndex": 0,
+        "options": [
+            "El vehículo que circula por el carril que se pretende ocupar.",
+            "El vehículo que realiza el cambio de carril.",
+            "El vehículo del carril más lento.\n"
+        ],
+        "image": "cambio2.jpg"
+    },
+    {
+        "text": "Es obligatorio al finalizar un adelantamiento...",
+        "correctIndex": 1,
+        "options": [
+            "Permanecer en el carril ocupado, independientemente de la fluidez del tránsito.",
+            "Incorporarse al carril derecho, si éste se encuentra libre, de forma gradual y sin\nobstaculizar la fluidez de tránsito.",
+            "Incorporarse al carril derecho, aunque ésto implique que otro vehículo deba modificar\nsu velocidad.\n"
+        ]
+    },
+    {
+        "text": "¿Cuál de estos carriles es el llamado “”carril de sobrepaso””?",
+        "correctIndex": 1,
+        "options": [
+            "Cualquiera de ellos.",
+            "Sólo el carril señalado como A.",
+            "Sólo el carril señalado como F.\n"
+        ],
+        "image": "carril.jpg"
+    },
+    {
+        "text": "El vehículo, que circula por el carril destinado al tránsito lento, no puede abandonarlo para\nsobrepasar a otro vehículo que transita más lento.",
+        "correctIndex": 1,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ]
+    },
+    {
+        "text": "El conductor del vehículo A quiere volver rápidamente al carril derecho porque ve ante él\nuna situación de peligro, ¿qué debe hacer el conductor del vehículo B?",
+        "correctIndex": 1,
+        "options": [
+            "Aumentar la velocidad para que realice la maniobra detrás suyo.",
+            "Reducir la velocidad para facilitarle el retorno al carril.",
+            "Tocar bocina y hacer guiño de luces para indicarle que no debe realizar la maniobra\n"
+        ]
+    },
+    {
+        "text": "En este tramo de la vía no se puede realizar un sobrepaso",
+        "correctIndex": 0,
+        "options": [
+            "Verdadero",
+            "Falso\n"
+        ],
+        "image": "sobrepaso2.jpg"
+    },
+    {
+        "text": "Al advertir que está por ser sobrepasado, ¿cuál debería ser su actitud?",
+        "correctIndex": 1,
+        "options": [
+            "A) Circular por la banquina.",
+            "B) Circular por la derecha de la calzada y mantenerse. En el caso de ser necesario, reducir\nla velocidad.",
+            "Ambas respuestas, A y B, son correctas.\n"
+        ]
+    },
+    {
+        "text": "¿Está permitido sobrepasar a otro vehículo en este lugar?",
+        "correctIndex": 1,
+        "options": [
+            "Sí, salvo que haya una señal que indique lo contrario.",
+            "No, está prohibido por normativa.",
+            "Sólo en el caso de que no perjudique la circulación de otros vehículos."
+        ],
+        "image": "tunel.jpg"
+    }
 
 ]
 
 .map(q=>({ ...q, image:q.image? process.env.PUBLIC_URL+"/source8/"+q.image : undefined}));;
 
- 
