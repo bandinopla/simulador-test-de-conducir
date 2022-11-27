@@ -13,6 +13,7 @@ export type SourceLink = {
 
 export type NumeredQuestion = {
     number:number,
+    numberInProvider:number,
     source:SourceLink
 } & Question;
 

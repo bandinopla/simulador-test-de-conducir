@@ -59,7 +59,7 @@ export class Quiz {
         //flatmapear el array...
         const all: NumeredQuestion[] = this.providers.reduce( (rtrn, prov, provIndex)=>{
 
-            if( providersON[provIndex] )
+            if( providersON.length==0 || providersON[provIndex] )
             {
                 for (let i = 0; i < prov.totalQuestions(); i++) {
 
@@ -69,7 +69,9 @@ export class Quiz {
                                         ...prov.source,
                                         index: provIndex
                                     }, 
-                                    number:0 } );
+                                    number:0,
+                                    numberInProvider: i
+                                } );
                 }
             } 
 

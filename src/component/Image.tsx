@@ -1,19 +1,19 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
+
+export const src2imagePath : (src:string)=>string = src=> {
+    
+    if( src.indexOf("http") > -1 )
+    {
+        return process.env.PUBLIC_URL+"/"+src.substring(0, src.lastIndexOf("/")).replace(/\W+/g,"-")+"/"+src.split("/").pop()
+    }
+
+    return src;
+}
+
 export const Image: React.FC<{ src: string }> = ({ src }) => {
 
-    const imageSrc = useMemo(() =>{
-        
-        if( src.indexOf("http") > -1 )
-        {
-            return process.env.PUBLIC_URL+"/"+src.substring(0, src.lastIndexOf("/")).replace(/\W+/g,"-")+"/"+src.split("/").pop();
-        }
-        else 
-        {
-            return src;
-        } 
-    
-    }, [src]);
+    const imageSrc = useMemo(() =>src2imagePath(src), [src]);
 
 
     const ref = useRef<HTMLImageElement>(null);
