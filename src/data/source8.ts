@@ -2550,7 +2550,7 @@ export const source:Question[] = [
             "Circulación obligatoria"
         ],
         correctIndex:0,
-        image:undefined
+        image:"sign8.jpg"
     },
     {
         text:"La siguiente señal indica:",
