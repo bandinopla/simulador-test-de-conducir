@@ -3244,7 +3244,8 @@ export const source:Question[] = [
             "Aumentar la velocidad para que realice la maniobra detrás suyo.",
             "Reducir la velocidad para facilitarle el retorno al carril.",
             "Tocar bocina y hacer guiño de luces para indicarle que no debe realizar la maniobra\n"
-        ]
+        ],
+        "image":"b116.jpg"
     },
     {
         "text": "En este tramo de la vía no se puede realizar un sobrepaso",
