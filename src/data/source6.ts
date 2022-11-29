@@ -351,12 +351,12 @@ export const source:Question[] = [
     {
         text: "La primer VTV para automóviles de uso particular radicados en CABA, cuándo es obligatoria?",
         options: [
-            "cuando el vehículo tiene más de 3 años de antiguedad",
-            "cuando el vehículo tiene más de 60 mil kilómetros",
-            "todas las anteriores",
-            "La VTV no es obligatoria"
+            "A) cuando el vehículo tiene más de 3 años de antiguedad",
+            "B) cuando el vehículo tiene más de 60 mil kilómetros",
+            "C) La VTV no es obligatoria",
+            "D) la A y la B"
         ],
-        correctIndex: 2
+        correctIndex: 3
     },
 
     {
