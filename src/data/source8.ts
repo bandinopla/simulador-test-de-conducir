@@ -2163,7 +2163,7 @@ export const source:Question[] = [
             "Información ",
             "Prevención"
         ],
-        correctIndex:1,
+        correctIndex:0,
         image:undefined
     },
     {
