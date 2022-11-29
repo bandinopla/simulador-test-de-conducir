@@ -1818,7 +1818,7 @@ export const source:Question[] = [
             "50 cm.",
             "20 cm"
         ],
-        correctIndex: 2,
+        correctIndex: 1,
         image: undefined
     },
     {
