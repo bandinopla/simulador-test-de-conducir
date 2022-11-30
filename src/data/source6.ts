@@ -542,7 +542,7 @@ export const source:Question[] = [
             "No",
             "Sí"
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         image:"/source6/rotonda.jpg"
     },
 
