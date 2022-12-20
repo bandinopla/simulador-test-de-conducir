@@ -62,7 +62,7 @@ function App() {
 
     const questionOptions = useMemo<OptionResorted[] | undefined>(() => {
 
-        //barajar opciones para evitar que uno se memorize la posisión de la opción en base a la pregunta en vez de la respuesta.
+        //barajar opciones para evitar que uno se memorize la posición de la opción en base a la pregunta en vez de la respuesta.
         if (question?.options) {
             let options = question?.options;
 

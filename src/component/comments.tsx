@@ -9,7 +9,7 @@ const DisqusComments : React.FC<{ }> = ({ }) => {
   const disqusConfig = {
     url: "https://bandinopla.github.io/simulador-test-de-conducir", 
     identifier: "general", // Single post id
-    title: "Opinionen y comentarios generales acerca del app", // Single post title
+    title: "Opiniones y comentarios generales acerca del app", // Single post title
     language:"es_MX"
   }
   return (

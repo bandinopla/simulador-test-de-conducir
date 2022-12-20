@@ -4,7 +4,7 @@ export const quizJSON = {
 		name: "Categoria B",
 		main: "<p>(Automóviles, camionetas y utilitarios)</p>",
 		results: "",
-		level1: "Aprobado/a !!, ya estas listo para rendir el examen teorico.",
+		level1: "Aprobado/a !!, ya estas listo para rendir el examen teórico.",
 		level2: "Desaprobado/a por muy poco, sigue practicando.",
 		level3: "Desaprobado, sigue practicando.",
 		level4: "Desaprobado, sigue practicando.",
