@@ -26,3 +26,6 @@ cover.psd
 cover.jpg
 TODO
 test.*
+
+# IDE
+.idea
