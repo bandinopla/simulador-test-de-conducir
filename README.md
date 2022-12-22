@@ -2,7 +2,7 @@
 
 <sub>*No oficial. El logo es solo para ilustrar que está enfocado en CABA.</sub> 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
  
@@ -57,6 +57,7 @@ Si notás algún error o tenés nuevas preguntas para agregar [creá un issue ac
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/Changuitoss"><img src="https://avatars.githubusercontent.com/u/46825009?v=4?s=100" width="100px;" alt="Changuitoss"/><br /><sub><b>Changuitoss</b></sub></a><br /><a href="https://github.com/bandinopla/simulador-test-de-conducir/commits?author=Changuitoss" title="Code">💻</a></td>
+      <td align="center"><a href="https://www.nahuelbrandan.com"><img src="https://avatars.githubusercontent.com/u/13824287?v=4?s=100" width="100px;" alt="nahuel brandan"/><br /><sub><b>nahuel brandan</b></sub></a><br /><a href="#maintenance-nahuelbrandan" title="Maintenance">🚧</a></td>
     </tr>
   </tbody>
 </table>
